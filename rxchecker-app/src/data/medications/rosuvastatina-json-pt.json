@@ -1,0 +1,769 @@
+{
+  "id": "rosuvastatina",
+  "name": "Rosuvastatina",
+  "generic_name": "rosuvastatina cálcica",
+  "brand_names": ["Crestor", "Rosuvastatina Generis", "Rosulip"],
+  "atc_code": "C10AA07",
+  "therapeutic_class": "Hipolipemiante - Inibidor HMG-CoA redutase (estatina)",
+  "prescription_status": "MSRM",
+  "last_updated": "2025-01-01",
+  
+  "drug_action": {
+    "title": "Mecanismo de Ação",
+    "content": "A rosuvastatina inibe competitivamente a 3-hidroxi-3-metilglutaril coenzima A (HMG-CoA) redutase, enzima limitante na biossíntese do colesterol, especialmente no fígado. Isto resulta em regulação positiva dos recetores LDL hepáticos e aumento da captação de LDL-colesterol.",
+    "effects": {
+      "primary": "Redução LDL-colesterol (45-63%)",
+      "secondary": "Redução triglicéridos (10-35%), aumento HDL (3-14%)",
+      "pleiotropic": "Efeitos anti-inflamatórios, estabilização placa aterosclerótica"
+    },
+    "pharmacokinetics": {
+      "bioavailability": "20% (baixa)",
+      "peak_effect": "3-5 horas",
+      "half_life": "19 horas",
+      "metabolism": "Mínimo hepático (10% CYP2C9)",
+      "elimination": "90% fezes inalterada",
+      "food_effect": "Redução 20% absorção (sem relevância clínica)"
+    },
+    "source": {
+      "type": "RCM",
+      "reference": "RCM Rosuvastatina - Secção 5.1"
+    }
+  },
+  
+  "sections": {
+    "indications": {
+      "title": "Indicações e Posologia",
+      "content": {
+        "primary_indications": [
+          "Hipercolesterolemia primária (tipo IIa, incluindo familiar heterozigótica)",
+          "Dislipidemia mista (tipo IIb)",
+          "Hipercolesterolemia familiar homozigótica",
+          "Prevenção primária eventos cardiovasculares (risco elevado)"
+        ],
+        "dosage": [
+          {
+            "indication": "Hipercolesterolemia/dislipidemia mista",
+            "population": "Adulto 18-69 anos",
+            "initial_dose": "5-10 mg uma vez por dia",
+            "titration": "Aumentar gradualmente intervalos ≥4 semanas",
+            "maximum": "20 mg uma vez por dia",
+            "timing": "Qualquer altura dia, com/sem alimentos"
+          },
+          {
+            "indication": "Hipercolesterolemia/dislipidemia mista",
+            "population": "Adulto origem asiática",
+            "initial_dose": "5 mg uma vez por dia",
+            "maximum": "20 mg uma vez por dia",
+            "notes": "Maior exposição sistémica nesta população"
+          },
+          {
+            "indication": "Hipercolesterolemia/dislipidemia mista",
+            "population": "Adulto ≥70 anos",
+            "initial_dose": "5 mg uma vez por dia",
+            "maximum": "20 mg uma vez por dia",
+            "notes": "Maior sensibilidade em idosos"
+          },
+          {
+            "indication": "Hipercolesterolemia/dislipidemia mista (fatores risco miopatia)",
+            "population": "Qualquer adulto",
+            "initial_dose": "5 mg uma vez por dia",
+            "maximum": "20 mg uma vez por dia",
+            "risk_factors": [
+              "História pessoal/familiar distúrbios musculares",
+              "História miopatia com outra estatina/fibrato",
+              "Hipotiroidismo",
+              "Insuficiência renal",
+              "Idade >65 anos",
+              "Uso concomitante fibratos"
+            ]
+          },
+          {
+            "indication": "Hipercolesterolemia grave (risco CV alto)",
+            "population": "Adulto 18-69 anos (uso especializado)",
+            "initial_dose": "5-10 mg uma vez por dia",
+            "maximum": "40 mg uma vez por dia",
+            "notes": "Apenas se não responderam adequadamente 20 mg + medidas não farmacológicas"
+          },
+          {
+            "indication": "Hipercolesterolemia grave (risco CV alto)",
+            "population": "Origem asiática",
+            "initial_dose": "5 mg uma vez por dia",
+            "maximum": "20 mg uma vez por dia",
+            "notes": "Dose 40 mg contraindicada"
+          },
+          {
+            "indication": "Hipercolesterolemia grave (risco CV alto + fatores risco miopatia)",
+            "population": "Qualquer adulto",
+            "initial_dose": "5 mg uma vez por dia",
+            "maximum": "20 mg uma vez por dia"
+          },
+          {
+            "indication": "Prevenção primária eventos CV",
+            "population": "Adulto 18-69 anos risco alto",
+            "dose": "20 mg uma vez por dia",
+            "criteria": "Risco estimado ≥20% a 10 anos (SCORE/Framingham)"
+          },
+          {
+            "indication": "Prevenção primária eventos CV",
+            "population": "Origem asiática",
+            "initial_dose": "5 mg uma vez por dia",
+            "target_dose": "20 mg uma vez por dia",
+            "titration": "Aumentar gradualmente intervalos ≥4 semanas se tolerado"
+          },
+          {
+            "indication": "Prevenção primária eventos CV",
+            "population": "≥70 anos",
+            "initial_dose": "5 mg uma vez por dia",
+            "target_dose": "20 mg uma vez por dia",
+            "titration": "Aumentar gradualmente se tolerado"
+          },
+          {
+            "indication": "Prevenção primária CV (fatores risco miopatia)",
+            "population": "Qualquer adulto",
+            "initial_dose": "5 mg uma vez por dia",
+            "target_dose": "20 mg uma vez por dia",
+            "titration": "Aumentar gradualmente se tolerado"
+          }
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Rosuvastatina - Secção 4.2"
+      }
+    },
+    
+    "safety_warnings": {
+      "title": "Informações Importantes de Segurança",
+      "content": {
+        "myopathy_rhabdomyolysis": {
+          "warning": "Risco miopatia e rabdomiólise, embora raro",
+          "risk_factors": [
+            "Idade >65 anos",
+            "Hipotiroidismo",
+            "Insuficiência renal",
+            "História pessoal/familiar distúrbios musculares",
+            "Abuso álcool",
+            "Exercício físico intenso",
+            "Cirurgia major",
+            "Trauma grave",
+            "Distúrbios metabólicos/eletrolíticos",
+            "Interações medicamentosas"
+          ],
+          "monitoring": "CK basal se fatores risco, parar se CK >5x LSN",
+          "symptoms": "Dor, fraqueza, cãibras musculares"
+        },
+        "diabetes_risk": {
+          "warning": "Pequeno aumento risco diabetes mellitus",
+          "risk_factors": [
+            "Glicemia jejum 5,6-6,9 mmol/L",
+            "IMC >30 kg/m²",
+            "Triglicéridos elevados",
+            "História hipertensão"
+          ],
+          "monitoring": "HbA1c/glicemia jejum se risco alto",
+          "management": "Benefício cardiovascular supera risco - não descontinuar"
+        },
+        "myasthenia_gravis": {
+          "warning": "Relatos muito raros miastenia gravis nova ou exacerbação",
+          "symptoms": [
+            "Fraqueza braços/pernas após atividade",
+            "Visão dupla",
+            "Ptose palpebral",
+            "Disfagia",
+            "Dispneia"
+          ],
+          "action": "Descontinuar se riscos superam benefícios",
+          "recovery": "Maioria recupera após suspensão"
+        },
+        "interstitial_lung_disease": {
+          "warning": "Doença pulmonar intersticial rara",
+          "symptoms": "Dispneia, tosse, perda peso",
+          "action": "Procurar atenção médica se sintomas desenvolvem"
+        }
+      },
+      "source": {
+        "type": "Alerta regulamentar",
+        "reference": "Infarmed - Alerta Estatinas Miastenia Gravis 2023"
+      }
+    },
+    
+    "contraindications": {
+      "title": "Contraindicações",
+      "content": [
+        "Hipersensibilidade rosuvastatina",
+        "Doença hepática ativa",
+        "Elevações persistentes transaminases séricas (>3x LSN)",
+        "Miopatia",
+        "Uso concomitante ciclosporina",
+        "Gravidez e potencial engravidar (contraceção adequada obrigatória)",
+        "Aleitamento materno",
+        "Insuficiência renal grave (ClCr <30 mL/min)"
+      ],
+      "dose_specific": {
+        "40mg_contraindications": [
+          "Fatores predisponentes miopatia/rabdomiólise",
+          "Uso concomitante fibratos",
+          "Origem asiática",
+          "Insuficiência renal moderada (ClCr 30-60 mL/min)"
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Rosuvastatina - Secção 4.3"
+      }
+    },
+    
+    "cautions": {
+      "title": "Precauções",
+      "content": [
+        "Fatores de risco toxicidade muscular (incluindo miopatia/rabdomiólise)",
+        "Hipotiroidismo (tratar adequadamente antes início)",
+        "Insuficiência renal (ajustar dose)",
+        "Idade >65 anos",
+        "História doença hepática",
+        "Consumo álcool elevado",
+        "Polimorfismos genéticos conhecidos",
+        "Exercício físico extenuante"
+      ],
+      "muscle_toxicity_factors": {
+        "patient_factors": [
+          "Idade avançada",
+          "Sexo feminino",
+          "Baixo peso corporal",
+          "História pessoal/familiar distúrbios musculares",
+          "Hipotiroidismo",
+          "Insuficiência renal",
+          "Insuficiência hepática",
+          "Abuso álcool"
+        ],
+        "treatment_factors": [
+          "Doses elevadas",
+          "Interações medicamentosas",
+          "Cirurgia/trauma",
+          "Exercício intenso"
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Rosuvastatina - Secção 4.4"
+      }
+    },
+    
+    "interactions": {
+      "title": "Interações Medicamentosas",
+      "content": [
+        {
+          "category": "Contraindicadas",
+          "drugs": [
+            {
+              "name": "Ciclosporina",
+              "effect": "Aumento 7x níveis rosuvastatina",
+              "mechanism": "Inibição OATP1B1 e BCRP",
+              "management": "CONTRAINDICADO"
+            }
+          ]
+        },
+        {
+          "category": "Redução Dose Obrigatória",
+          "drugs": [
+            {
+              "name": "Gemfibrozil",
+              "effect": "Aumento 2x níveis rosuvastatina",
+              "dose_adjustment": "Iniciar 5 mg/dia, máximo 20 mg/dia",
+              "mechanism": "Inibição OATP1B1"
+            },
+            {
+              "name": "Atazanavir + ritonavir",
+              "effect": "Aumento 3x níveis rosuvastatina",
+              "dose_adjustment": "Iniciar 5 mg/dia, máximo 10 mg/dia"
+            },
+            {
+              "name": "Atazanavir + cobicistat",
+              "effect": "Aumento significativo níveis",
+              "dose_adjustment": "Máximo 10 mg/dia"
+            }
+          ]
+        },
+        {
+          "category": "Precaução - Aumento Exposição",
+          "drugs": [
+            {
+              "name": "Bezafibrato, ciprofibrato, fenofibrato",
+              "effect": "Risco miopatia",
+              "dose_adjustment": "Iniciar 5 mg/dia, 40 mg contraindicado",
+              "monitoring": "Vigilância sintomas musculares"
+            },
+            {
+              "name": "Sofosbuvir/velpatasvir",
+              "effect": "Aumento 2-3x níveis rosuvastatina",
+              "dose_adjustment": "Iniciar 5 mg/dia, máximo 10 mg/dia"
+            },
+            {
+              "name": "Elbasvir/grazoprevir",
+              "effect": "Aumento níveis rosuvastatina",
+              "dose_adjustment": "Iniciar 5 mg/dia, máximo 10 mg/dia"
+            },
+            {
+              "name": "Glecaprevir/pibrentasvir",
+              "effect": "Aumento 2x níveis rosuvastatina",
+              "dose_adjustment": "Máximo 5 mg/dia"
+            }
+          ]
+        },
+        {
+          "category": "Precaução - Risco Miopatia",
+          "drugs": [
+            {
+              "name": "Clopidogrel",
+              "effect": "Possível aumento risco miopatia",
+              "dose_adjustment": "Iniciar 5 mg/dia, consultar literatura",
+              "monitoring": "Vigilância sintomas musculares"
+            },
+            {
+              "name": "Leflunomida",
+              "effect": "Risco miopatia",
+              "dose_adjustment": "Máximo 10 mg/dia"
+            },
+            {
+              "name": "Teriflunomida",
+              "effect": "Possível aumento exposição",
+              "dose_adjustment": "Iniciar 5 mg/dia ou reduzir dose pela metade"
+            }
+          ]
+        },
+        {
+          "category": "Redução Eficácia Rosuvastatina",
+          "drugs": [
+            {
+              "name": "Antiácidos (Al/Mg)",
+              "effect": "Redução 50% absorção rosuvastatina",
+              "management": "Administrar rosuvastatina ≥2h antes antiácido"
+            }
+          ]
+        },
+        {
+          "category": "Potenciação Efeitos Outros Fármacos",
+          "drugs": [
+            {
+              "name": "Varfarina",
+              "effect": "Aumento INR",
+              "management": "Monitorizar INR início tratamento e alterações dose"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Rosuvastatina - Secção 4.5"
+      }
+    },
+    
+    "side_effects": {
+      "title": "Efeitos Adversos",
+      "content": {
+        "common": [
+          "Cefaleias",
+          "Tonturas",
+          "Obstipação",
+          "Náuseas",
+          "Dor abdominal",
+          "Mialgia, artralgia",
+          "Astenia",
+          "Diabetes mellitus (doentes risco)"
+        ],
+        "uncommon": [
+          "Alopecia",
+          "Prurido, erupção cutânea",
+          "Hepatite",
+          "Pancreatite",
+          "Perda memória",
+          "Disfunção sexual",
+          "Trombocitopenia",
+          "Vómitos"
+        ],
+        "rare": [
+          "Síndrome lúpus-like",
+          "Miopatia (incluindo miosite)",
+          "Neuropatia periférica",
+          "Distúrbios tendões"
+        ],
+        "very_rare": [
+          "Rabdomiólise",
+          "Necrose hepática",
+          "Reação anafilática"
+        ],
+        "frequency_unknown": [
+          "Depressão",
+          "Doença pulmonar intersticial",
+          "Miastenia gravis",
+          "Disfunção neuromuscular"
+        ],
+        "dose_related": {
+          "muscle_effects": "Mais frequentes doses ≥40 mg",
+          "proteinuria": "Transitória, mais comum 40 mg",
+          "hematuria": "Microscópica, mais comum 40 mg"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Rosuvastatina - Secção 4.8"
+      }
+    },
+    
+    "special_populations": {
+      "title": "Populações Especiais",
+      "content": {
+        "pregnancy": {
+          "category": "X - Contraindicado",
+          "description": "Estatinas contraindicadas gravidez",
+          "reason": "Síntese colesterol afeta desenvolvimento fetal",
+          "action": "Descontinuar 3 meses antes tentar conceber"
+        },
+        "lactation": {
+          "safety": "Contraindicado",
+          "description": "Desconhecido se excretada leite materno",
+          "risk": "Potencial efeitos adversos desenvolvimento lactente"
+        },
+        "contraception": {
+          "requirement": "Contraceção adequada durante tratamento",
+          "duration": "E durante 1 mês após suspensão"
+        },
+        "pediatric": {
+          "safety": "Não estabelecida <18 anos",
+          "restriction": "Não recomendada crianças/adolescentes"
+        },
+        "elderly": {
+          "considerations": [
+            "Iniciar 5 mg/dia se ≥70 anos",
+            "Maior risco efeitos adversos",
+            "Função renal frequentemente diminuída",
+            "Maior suscetibilidade miopatia",
+            "Monitorização mais frequente"
+          ]
+        },
+        "asian_population": {
+          "pharmacokinetics": "Exposição sistémica 2x maior",
+          "dosing": "Iniciar sempre 5 mg/dia",
+          "maximum": "20 mg/dia (40 mg contraindicado)",
+          "mechanism": "Polimorfismos genéticos SLCO1B1"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Rosuvastatina - Secção 4.6"
+      }
+    },
+    
+    "renal_impairment": {
+      "title": "Insuficiência Renal",
+      "content": {
+        "mild": "ClCr 60-89 mL/min: Sem ajuste necessário",
+        "moderate": "ClCr 30-59 mL/min: Iniciar 5 mg/dia, evitar 40 mg",
+        "severe": "ClCr <30 mL/min: CONTRAINDICADO",
+        "monitoring": "Considerar monitorização função renal com dose 40 mg/dia",
+        "mechanism": "Eliminação renal aumentada com compromisso função renal"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Rosuvastatina - Secção 4.2"
+      }
+    },
+    
+    "hepatic_impairment": {
+      "title": "Insuficiência Hepática",
+      "content": {
+        "mild_moderate": "Usar com precaução",
+        "active_disease": "Contraindicado",
+        "transaminases": "Contraindicado se >3x LSN",
+        "monitoring": "Função hepática antes início e conforme indicado"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Rosuvastatina - Secção 4.3"
+      }
+    },
+    
+    "monitoring": {
+      "title": "Monitorização",
+      "content": {
+        "baseline": [
+          "Perfil lipídico completo (CT, TG, HDL, LDL, não-HDL)",
+          "TSH (se sintomas hipotiroidismo)",
+          "Função renal (creatinina, ClCr)",
+          "Transaminases hepáticas (ALT, AST)",
+          "CK (se fatores risco miopatia)",
+          "HbA1c/glicemia jejum (se risco diabetes)"
+        ],
+        "ongoing": [
+          {
+            "parameter": "Perfil lipídico",
+            "frequency": "2-3 meses após início/alteração dose, depois anualmente",
+            "targets": "LDL <70 mg/dL (alto risco) ou <55 mg/dL (muito alto risco)"
+          },
+          {
+            "parameter": "Transaminases hepáticas",
+            "frequency": "2-3 meses após início, depois anualmente ou se sintomas",
+            "action": "Descontinuar se >3x LSN persistente"
+          },
+          {
+            "parameter": "CK (creatina cinase)",
+            "when": "Se sintomas musculares ou fatores risco",
+            "action": "Descontinuar se >5x LSN ou se sintomas graves"
+          },
+          {
+            "parameter": "Sintomas musculares",
+            "frequency": "Avaliar todas consultas",
+            "symptoms": "Dor, fraqueza, cãibras musculares",
+            "action": "Descontinuar se compromete atividades diárias"
+          },
+          {
+            "parameter": "Função renal",
+            "frequency": "Anualmente ou se deterioração",
+            "relevance": "Especialmente importante dose 40 mg"
+          },
+          {
+            "parameter": "Diabetes",
+            "frequency": "HbA1c após 3 meses se alto risco",
+            "management": "Não descontinuar estatina se diabetes desenvolve"
+          }
+        ],
+        "targets": {
+          "primary_prevention": "LDL <116 mg/dL + redução ≥50%",
+          "secondary_prevention": "LDL <70 mg/dL",
+          "very_high_risk": "LDL <55 mg/dL",
+          "familial_hypercholesterolemia": "LDL <100 mg/dL (adultos)"
+        }
+      },
+      "source": {
+        "type": "Guidelines",
+        "reference": "Guidelines ESC/EAS - Dislipidemia 2019"
+      }
+    },
+    
+    "administration": {
+      "title": "Administração",
+      "content": {
+        "timing": "Qualquer altura do dia",
+        "food": "Com ou sem alimentos",
+        "consistency": "Preferível sempre mesma altura",
+        "swallowing": "Engolir comprimidos inteiros com água",
+        "missed_dose": "Tomar assim que lembrar, não duplicar dose",
+        "discontinuation": "Pode ser suspensa abruptamente (sem síndrome abstinência)"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Rosuvastatina - Secção 4.2"
+      }
+    },
+    
+    "forms": {
+      "title": "Formas Farmacêuticas",
+      "content": [
+        {
+          "form": "Comprimidos revestidos por película",
+          "strengths": ["5 mg", "10 mg", "20 mg", "40 mg"],
+          "pack_sizes": ["28 comp", "30 comp", "90 comp"],
+          "notes": "Comprimidos podem ter cores diferentes conforme dosagem"
+        },
+        {
+          "form": "Cápsulas",
+          "strengths": ["5 mg", "10 mg", "20 mg", "40 mg"],
+          "pack_sizes": ["28 caps", "30 caps"],
+          "notes": "Podem ser abertas e misturadas com alimentos moles"
+        }
+      ],
+      "source": {
+        "type": "Infomed",
+        "reference": "Base de dados do Infarmed"
+      }
+    }
+  },
+  
+  "calculators": [
+    {
+      "id": "cardiovascular_risk",
+      "name": "Risco Cardiovascular",
+      "type": "risk_calculator",
+      "applicable": true,
+      "description": "Estratificação risco para determinar alvos LDL",
+      "risk_categories": {
+        "very_high": {
+          "criteria": [
+            "Doença CV aterosclerótica documentada",
+            "DM + lesão órgão-alvo ou ≥3 fatores risco major",
+            "IRC grave (TFG <30)",
+            "SCORE ≥10% ou FRS ≥20%"
+          ],
+          "ldl_target": "<55 mg/dL",
+          "statin_intensity": "Alta intensidade"
+        },
+        "high": {
+          "criteria": [
+            "FH familiar heterozigótica",
+            "DM sem lesão órgão-alvo",
+            "IRC moderada (TFG 30-59)",
+            "SCORE 5-9% ou FRS 10-20%"
+          ],
+          "ldl_target": "<70 mg/dL", 
+          "statin_intensity": "Moderada-alta"
+        },
+        "moderate": {
+          "criteria": [
+            "SCORE 1-4% (10 anos)",
+            "Jovens DM tipo 1"
+          ],
+          "ldl_target": "<100 mg/dL",
+          "statin_intensity": "Moderada"
+        },
+        "low": {
+          "criteria": "SCORE <1%",
+          "ldl_target": "<116 mg/dL",
+          "statin_intensity": "Baixa-moderada"
+        }
+      }
+    },
+    {
+      "id": "dose_adjustment",
+      "name": "Ajuste Dose Rosuvastatina",
+      "type": "dose_calculator",
+      "applicable": true,
+      "description": "Determinar dose inicial e máxima conforme fatores risco",
+      "factors": {
+        "standard_adult": {
+          "initial": "5-10 mg",
+          "maximum": "20 mg (40 mg se alto risco CV)"
+        },
+        "asian_origin": {
+          "initial": "5 mg",
+          "maximum": "20 mg"
+        },
+        "elderly_70plus": {
+          "initial": "5 mg", 
+          "maximum": "20 mg"
+        },
+        "myopathy_risk": {
+          "initial": "5 mg",
+          "maximum": "20 mg"
+        },
+        "renal_impairment": {
+          "moderate": "Iniciar 5 mg, evitar 40 mg",
+          "severe": "Contraindicado"
+        }
+      }
+    },
+    {
+      "id": "muscle_toxicity_risk",
+      "name": "Risco Toxicidade Muscular",
+      "type": "risk_assessment",
+      "applicable": true,
+      "description": "Avaliar fatores risco miopatia/rabdomiólise",
+      "risk_factors": [
+        "Idade >65 anos",
+        "Sexo feminino", 
+        "Baixo peso corporal",
+        "História pessoal/familiar distúrbios musculares",
+        "Hipotiroidismo",
+        "Insuficiência renal",
+        "Insuficiência hepática",
+        "Abuso álcool",
+        "Exercício físico intenso",
+        "Interações medicamentosas",
+        "Polimorfismos genéticos"
+      ],
+      "management": {
+        "low_risk": "Dose padrão, monitorização rotineira",
+        "moderate_risk": "Iniciar 5 mg, monitorização frequente", 
+        "high_risk": "Considerar alternativa ou dose mínima eficaz"
+      }
+    }
+  ],
+  
+  "alerts": [
+    {
+      "type": "muscle",
+      "condition": "sintomas_musculares",
+      "message": "Avaliar CK urgente - parar se >5x LSN ou sintomas comprometem atividade"
+    },
+    {
+      "type": "interaction",
+      "condition": "uso_gemfibrozil",
+      "message": "Iniciar 5 mg/dia, máximo 20 mg - risco miopatia aumentado"
+    },
+    {
+      "type": "hepatic",
+      "condition": "transaminases_elevadas",
+      "message": "Descontinuar se ALT/AST >3x LSN persistente"
+    },
+    {
+      "type": "renal",
+      "condition": "ClCr_menor_30",
+      "message": "CONTRAINDICADO - risco toxicidade aumentado"
+    },
+    {
+      "type": "pregnancy",
+      "condition": "mulher_idade_fertil",
+      "message": "Contraceção obrigatória - descontinuar 3 meses antes conceber"
+    },
+    {
+      "type": "asian_population",
+      "condition": "origem_asiatica",
+      "message": "Iniciar sempre 5 mg - exposição sistémica 2x maior"
+    },
+    {
+      "type": "diabetes",
+      "condition": "desenvolvimento_diabetes",
+      "message": "Não descontinuar estatina - benefício CV supera risco"
+    },
+    {
+      "type": "40mg_dose",
+      "condition": "dose_40mg",
+      "message": "Monitorizar função renal - considerar se contraindicações específicas"
+    }
+  ],
+  
+  "clinical_pearls": [
+    "Estatina mais potente disponível (redução LDL até 63%)",
+    "Mínimo metabolismo hepático - menos interações CYP450",
+    "90% eliminação renal inalterada - cuidado insuficiência renal",
+    "População asiática: exposição 2x maior (polimorfismos SLCO1B1)",
+    "Pode ser tomada qualquer altura (vs atorvastatina noturna)",
+    "Efeitos pleiotrópicos: anti-inflamatório, estabilização placa",
+    "Diabetes risco calculado vs benefício CV (continuar tratamento)",
+    "CK >5x LSN = descontinuar imediatamente",
+    "Sintomas musculares sem CK elevada = ainda assim descontinuar se graves",
+    "Miastenia gravis: novo alerta 2023 - vigiar sintomas neurológicos",
+    "Contraceção obrigatória mulheres idade fértil",
+    "Gemfibrozil combinação mais perigosa (vs ciclosporina contraindicado)",
+    "Antiácidos reduzem 50% absorção - espaçar 2h",
+    "Alvo LDL depende risco CV: <55 (muito alto), <70 (alto), <100 (moderado)"
+  ],
+  
+  "references": [
+    {
+      "type": "primary",
+      "source": "RCM Rosuvastatina",
+      "url": "https://extranet.infarmed.pt/",
+      "date_accessed": "2025-01-01"
+    },
+    {
+      "type": "safety_alert",
+      "source": "Infarmed - Alerta Estatinas Miastenia Gravis",
+      "year": 2023
+    },
+    {
+      "type": "guideline",
+      "source": "Guidelines ESC/EAS - Dislipidemia",
+      "year": 2019
+    },
+    {
+      "type": "guideline",
+      "source": "Norma DGS 019/2011 - Abordagem Terapêutica das Dislipidemias",
+      "year": 2011
+    },
+    {
+      "type": "decision_aid",
+      "source": "NICE - Taking a statin to reduce risk of coronary heart disease and stroke",
+      "url": "https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/nice-guidelines/shared-decision-making"
+    }
+  ]
+}

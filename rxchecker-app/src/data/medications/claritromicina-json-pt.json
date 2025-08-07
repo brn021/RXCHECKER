@@ -1,0 +1,594 @@
+{
+  "id": "claritromicina",
+  "name": "Claritromicina",
+  "generic_name": "claritromicina",
+  "brand_names": ["Klacid", "Claritromicina Generis", "Claripen"],
+  "atc_code": "J01FA09",
+  "therapeutic_class": "Antibacteriano - Macrólido",
+  "prescription_status": "MSRM",
+  "last_updated": "2025-01-01",
+  
+  "drug_action": {
+    "title": "Mecanismo de Ação",
+    "content": "A claritromicina é um antibiótico macrólido que inibe a síntese proteica bacteriana ligando-se reversivelmente à subunidade ribossomal 50S, bloqueando a translocação dos aminoacil-tRNA.",
+    "source": {
+      "type": "RCM",
+      "reference": "RCM Claritromicina - Secção 5.1"
+    }
+  },
+  
+  "sections": {
+    "indications": {
+      "title": "Indicações e Posologia",
+      "content": {
+        "primary_indications": [
+          "Infeções do trato respiratório superior e inferior",
+          "Infeções da pele e tecidos moles",
+          "Erradicação do Helicobacter pylori (em combinação)",
+          "Infeções por micobactérias atípicas (MAC)",
+          "Profilaxia da endocardite bacteriana"
+        ],
+        "dosage": [
+          {
+            "indication": "Infeções respiratórias (adultos)",
+            "route": "Oral - libertação imediata",
+            "dose": "250-500 mg duas vezes por dia",
+            "duration": "7-14 dias",
+            "notes": "Dose maior para infeções graves"
+          },
+          {
+            "indication": "Infeções respiratórias (adultos)",
+            "route": "Oral - libertação prolongada",
+            "dose": "500 mg uma vez por dia",
+            "duration": "7-14 dias",
+            "notes": "Tomar com alimentos"
+          },
+          {
+            "indication": "Infeções respiratórias (adultos)",
+            "route": "IV",
+            "dose": "500 mg cada 12 horas",
+            "duration": "máximo 5 dias",
+            "notes": "Perfusão em 60 minutos"
+          },
+          {
+            "indication": "Pneumonia adquirida na comunidade",
+            "route": "Oral",
+            "dose": "500 mg duas vezes por dia",
+            "duration": "5 dias",
+            "notes": "Primeira linha em doentes ambulatórios"
+          },
+          {
+            "indication": "Exacerbação aguda DPOC",
+            "route": "Oral",
+            "dose": "500 mg duas vezes por dia",
+            "duration": "5 dias"
+          },
+          {
+            "indication": "Infeções pele/tecidos moles",
+            "route": "Oral",
+            "dose": "250-500 mg duas vezes por dia",
+            "duration": "5-7 dias"
+          },
+          {
+            "indication": "H. pylori (terapêutica tripla)",
+            "route": "Oral",
+            "dose": "500 mg duas vezes por dia",
+            "duration": "7-14 dias",
+            "combination": "com PPI + amoxicilina ou metronidazol"
+          },
+          {
+            "indication": "Infeções por MAC (tratamento)",
+            "route": "Oral",
+            "dose": "500 mg duas vezes por dia",
+            "duration": "indefinida",
+            "notes": "Sempre em combinação"
+          },
+          {
+            "indication": "Infeções por MAC (profilaxia)",
+            "route": "Oral",
+            "dose": "500 mg duas vezes por dia",
+            "notes": "Em doentes com VIH e CD4 <50"
+          },
+          {
+            "indication": "Profilaxia endocardite",
+            "route": "Oral",
+            "dose": "500 mg dose única",
+            "timing": "1 hora antes do procedimento",
+            "notes": "Alternativa à amoxicilina se alergia"
+          }
+        ],
+        "pediatric_dosing": {
+          "weight_based": "7,5 mg/kg duas vezes por dia (máx 500 mg/dose)",
+          "weight_ranges": [
+            "8-11 kg: 62,5 mg duas vezes por dia",
+            "12-19 kg: 125 mg duas vezes por dia",
+            "20-29 kg: 187,5 mg duas vezes por dia",
+            "30-40 kg: 250 mg duas vezes por dia"
+          ],
+          "max_adult_dose": "≥40 kg: dose de adulto"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Claritromicina - Secção 4.2"
+      }
+    },
+    
+    "contraindications": {
+      "title": "Contraindicações",
+      "content": [
+        "Hipersensibilidade aos macrólidos",
+        "História de prolongamento QT ou arritmias ventriculares",
+        "História de hepatite/disfunção hepática com claritromicina",
+        "Uso concomitante com:",
+        "- Astemizol, cisaprida, pimozida, terfenadina",
+        "- Alcaloides da cravagem do centeio (ergotamina, di-hidroergotamina)",
+        "- Atorvastatina, lovastatina, sinvastatina (dose oral)",
+        "- Colchicina (se insuficiência renal/hepática)",
+        "Insuficiência renal grave (TFG <30) + insuficiência hepática concomitante"
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Claritromicina - Secção 4.3"
+      }
+    },
+    
+    "cautions": {
+      "title": "Precauções",
+      "content": [
+        "Miastenia gravis (pode agravar sintomas)",
+        "Insuficiência coronária grave",
+        "Distúrbios eletrolíticos (hipocaliemia, hipomagnesemia)",
+        "Bradicardia clinicamente significativa",
+        "Uso concomitante de outros fármacos que prolongam QT",
+        "Idosos (maior risco de efeitos adversos)",
+        "Insuficiência renal (ajustar dose)",
+        "Insuficiência hepática (monitorizar)",
+        "Diabetes (suspensões contêm sacarose)"
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Claritromicina - Secção 4.4"
+      }
+    },
+    
+    "interactions": {
+      "title": "Interações Medicamentosas",
+      "content": [
+        {
+          "category": "Contraindicadas (Prolongamento QT)",
+          "drugs": [
+            {
+              "name": "Astemizol, terfenadina",
+              "effect": "Prolongamento QT grave, torsades de pointes",
+              "management": "Contraindicado"
+            },
+            {
+              "name": "Cisaprida, pimozida",
+              "effect": "Arritmias ventriculares fatais",
+              "management": "Contraindicado"
+            }
+          ]
+        },
+        {
+          "category": "Contraindicadas (Rabdomiólise)",
+          "drugs": [
+            {
+              "name": "Atorvastatina, lovastatina, sinvastatina",
+              "effect": "Risco de rabdomiólise (inibição CYP3A4)",
+              "management": "Contraindicado com formulações orais"
+            }
+          ]
+        },
+        {
+          "category": "Contraindicadas (Ergotismo)",
+          "drugs": [
+            {
+              "name": "Ergotamina, di-hidroergotamina",
+              "effect": "Vasoespasmo grave, ergotismo",
+              "management": "Contraindicado"
+            }
+          ]
+        },
+        {
+          "category": "Precaução Major - Substrato CYP3A4",
+          "drugs": [
+            {
+              "name": "Varfarina",
+              "effect": "Potenciação do efeito anticoagulante",
+              "management": "Monitorizar INR frequentemente, ajustar dose"
+            },
+            {
+              "name": "Digoxina",
+              "effect": "Aumento dos níveis de digoxina",
+              "management": "Monitorizar níveis séricos, sintomas de toxicidade"
+            },
+            {
+              "name": "Carbamazepina",
+              "effect": "Aumento dos níveis de carbamazepina",
+              "management": "Monitorizar níveis, sintomas de toxicidade"
+            },
+            {
+              "name": "Fenitoína",
+              "effect": "Aumento dos níveis de fenitoína",
+              "management": "Monitorizar níveis séricos"
+            },
+            {
+              "name": "Teofilina",
+              "effect": "Aumento dos níveis de teofilina",
+              "management": "Monitorizar níveis, reduzir dose se necessário"
+            },
+            {
+              "name": "Ciclosporina, tacrolimus",
+              "effect": "Aumento dos níveis de imunossupressores",
+              "management": "Monitorizar níveis e função renal"
+            }
+          ]
+        },
+        {
+          "category": "Precaução Moderada",
+          "drugs": [
+            {
+              "name": "Rosuvastatina, pravastatina",
+              "effect": "Menor risco de miopatia (não CYP3A4)",
+              "management": "Usar com precaução, monitorizar CK"
+            },
+            {
+              "name": "Rifampicina",
+              "effect": "Redução dos níveis de claritromicina",
+              "management": "Considerar alternativa ou aumentar dose"
+            },
+            {
+              "name": "Zidovudina",
+              "effect": "Redução dos níveis de zidovudina",
+              "management": "Espaçar administração"
+            }
+          ]
+        },
+        {
+          "category": "Interações Bidirecionais",
+          "drugs": [
+            {
+              "name": "Fluconazol",
+              "effect": "Aumento mútuo dos níveis plasmáticos",
+              "management": "Monitorizar efeitos adversos de ambos"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Claritromicina - Secção 4.5"
+      }
+    },
+    
+    "side_effects": {
+      "title": "Efeitos Adversos",
+      "content": {
+        "common": [
+          "Náuseas, vómitos, dor abdominal",
+          "Diarreia",
+          "Alterações do paladar (metálico)",
+          "Cefaleias",
+          "Insónia",
+          "Erupção cutânea"
+        ],
+        "uncommon": [
+          "Candidíase oral",
+          "Leucopenia, neutropenia",
+          "Ansiedade, nervosismo",
+          "Tonturas, sonolência",
+          "Palpitações",
+          "Prolongamento QT",
+          "Hepatite, icterícia",
+          "Urticária, prurido",
+          "Mialgia, artralgia"
+        ],
+        "serious": [
+          "Colite associada ao Clostridioides difficile",
+          "Hepatotoxicidade grave",
+          "Prolongamento QT com torsades de pointes",
+          "Síndrome de Stevens-Johnson",
+          "Reações anafiláticas",
+          "Perda auditiva (geralmente reversível)",
+          "Nefrite intersticial",
+          "Rabdomiólise (com estatinas)",
+          "Hipoglicemia grave (especialmente em idosos)"
+        ],
+        "pediatric_specific": [
+          "Estenose pilórica hipertrófica (lactentes)",
+          "Dentes manchados (formulações líquidas)"
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Claritromicina - Secção 4.8"
+      }
+    },
+    
+    "special_populations": {
+      "title": "Populações Especiais",
+      "content": {
+        "pregnancy": {
+          "category": "Evitar no 1º trimestre",
+          "description": "Evitar, especialmente no primeiro trimestre, exceto se benefício superar risco",
+          "risk": "Dados limitados em humanos, toxicidade em estudos animais"
+        },
+        "lactation": {
+          "safety": "Precaução",
+          "description": "Excretada no leite materno",
+          "notes": "Evitar exceto se benefício superar risco"
+        },
+        "pediatric": {
+          "restrictions": "Segura >6 meses",
+          "considerations": [
+            "Calcular dose baseada no peso",
+            "Risco de estenose pilórica em recém-nascidos",
+            "Suspensão pode manchar dentes temporariamente",
+            "IV não licenciada <12 anos"
+          ]
+        },
+        "elderly": {
+          "considerations": [
+            "Maior risco de prolongamento QT",
+            "Mais suscetíveis a efeitos adversos",
+            "Maior risco de hipoglicemia",
+            "Monitorização mais frequente",
+            "Ajustar conforme função renal"
+          ]
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Claritromicina - Secção 4.6"
+      }
+    },
+    
+    "hepatic_impairment": {
+      "title": "Insuficiência Hepática",
+      "content": {
+        "mild_moderate": "Usar com precaução, monitorizar função hepática",
+        "severe": "Evitar se insuficiência renal concomitante",
+        "monitoring": "Transaminases, bilirrubina, sintomas de hepatotoxicidade",
+        "notes": "Claritromicina é hepatotóxica - risco aumentado se disfunção prévia"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Claritromicina - Secção 4.2"
+      }
+    },
+    
+    "renal_impairment": {
+      "title": "Insuficiência Renal",
+      "content": {
+        "mild": "TFG 30-60 mL/min: Sem ajuste para libertação imediata",
+        "moderate_severe": "TFG <30 mL/min: Reduzir dose para metade, máximo 14 dias",
+        "libertacao_prolongada": "TFG <30 mL/min: Evitar formulações de libertação prolongada",
+        "dialysis": "Não é significativamente removida por hemodiálise",
+        "adjustment_examples": {
+          "normal_dose_500mg": "TFG <30: 250 mg duas vezes por dia",
+          "normal_dose_250mg": "TFG <30: 125 mg duas vezes por dia"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Claritromicina - Secção 4.2"
+      }
+    },
+    
+    "monitoring": {
+      "title": "Monitorização",
+      "content": {
+        "baseline": [
+          "ECG se fatores de risco para prolongamento QT",
+          "Função hepática",
+          "Função renal",
+          "Eletrólitos (K⁺, Mg²⁺)"
+        ],
+        "ongoing": [
+          {
+            "parameter": "ECG",
+            "frequency": "Se fatores de risco ou sintomas cardíacos",
+            "indication": "Prolongamento QT, arritmias"
+          },
+          {
+            "parameter": "Função hepática",
+            "frequency": "Se tratamento prolongado ou sintomas",
+            "alert": "Icterícia, dor abdominal, fadiga"
+          },
+          {
+            "parameter": "Audição",
+            "frequency": "Se doses altas ou tratamento prolongado",
+            "notes": "Especialmente em idosos"
+          },
+          {
+            "parameter": "Interações medicamentosas",
+            "frequency": "Continuamente",
+            "examples": "INR (varfarina), digoxina, níveis anticonvulsivantes"
+          }
+        ],
+        "h_pylori_monitoring": {
+          "test_eradication": "Teste respiratório ureia 4-6 semanas após tratamento",
+          "alternative": "Antígeno fecal ou endoscopia"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Claritromicina - Secção 4.4"
+      }
+    },
+    
+    "administration": {
+      "title": "Administração",
+      "content": {
+        "immediate_release": {
+          "timing": "Pode ser tomada com ou sem alimentos",
+          "food_effect": "Alimentos podem reduzir efeitos GI adversos"
+        },
+        "modified_release": {
+          "timing": "Deve ser tomada com alimentos",
+          "swallowing": "Engolir inteiro, não mastigar nem partir"
+        },
+        "iv": {
+          "dilution": "Diluir em glicose 5% ou NaCl 0,9%",
+          "concentration": "2 mg/mL",
+          "infusion_time": "60 minutos",
+          "stability": "Usar no prazo de 6 horas após reconstituição"
+        },
+        "pediatric": {
+          "suspension": "Agitar bem antes de usar",
+          "taste": "Pode ser misturada com sumo ou leite se necessário",
+          "storage": "Refrigerar após reconstituição"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Claritromicina - Secção 6.6"
+      }
+    },
+    
+    "forms": {
+      "title": "Formas Farmacêuticas",
+      "content": [
+        {
+          "form": "Comprimidos revestidos por película",
+          "strengths": ["250 mg", "500 mg"],
+          "pack_sizes": ["14 comp", "20 comp", "60 comp"]
+        },
+        {
+          "form": "Comprimidos de libertação prolongada",
+          "strengths": ["500 mg"],
+          "pack_sizes": ["7 comp", "14 comp"]
+        },
+        {
+          "form": "Granulado para suspensão oral",
+          "strengths": ["125 mg/5 mL", "250 mg/5 mL"],
+          "pack_sizes": ["60 mL", "100 mL"]
+        },
+        {
+          "form": "Pó para solução para perfusão",
+          "strengths": ["500 mg"],
+          "pack_sizes": ["1 frasco"]
+        }
+      ],
+      "source": {
+        "type": "Infomed",
+        "reference": "Base de dados do Infarmed"
+      }
+    }
+  },
+  
+  "calculators": [
+    {
+      "id": "pediatric_dosing",
+      "name": "Dosagem Pediátrica Claritromicina",
+      "type": "weight_based",
+      "applicable": true,
+      "description": "Calcular dose pediátrica baseada no peso",
+      "formula": "7,5 mg/kg duas vezes por dia (máximo 500 mg/dose)",
+      "weight_ranges": {
+        "8-11": "62,5 mg 2x/dia",
+        "12-19": "125 mg 2x/dia",
+        "20-29": "187,5 mg 2x/dia",
+        "30-40": "250 mg 2x/dia",
+        "40+": "dose adulto"
+      }
+    },
+    {
+      "id": "renal_adjustment",
+      "name": "Ajuste Renal Claritromicina",
+      "type": "renal_function",
+      "applicable": true,
+      "description": "Ajustar dose conforme função renal",
+      "adjustments": {
+        "TFG_30_60": "Dose normal",
+        "TFG_menos_30": "50% da dose normal, máximo 14 dias"
+      }
+    },
+    {
+      "id": "qt_risk_assessment",
+      "name": "Avaliação Risco Prolongamento QT",
+      "type": "risk_calculator",
+      "applicable": true,
+      "description": "Avaliar fatores de risco antes de prescrever",
+      "risk_factors": [
+        "Idade >65 anos",
+        "Sexo feminino",
+        "Bradicardia <50 bpm",
+        "Hipocaliemia, hipomagnesemia",
+        "História familiar de QT longo",
+        "Medicamentos que prolongam QT",
+        "Doença cardíaca estrutural"
+      ]
+    }
+  ],
+  
+  "alerts": [
+    {
+      "type": "interaction",
+      "condition": "uso_estatinas",
+      "message": "CONTRAINDICADO com atorvastatina/lovastatina/sinvastatina - risco de rabdomiólise"
+    },
+    {
+      "type": "cardiac",
+      "condition": "fatores_risco_qt",
+      "message": "Monitorizar ECG - risco de prolongamento QT e torsades de pointes"
+    },
+    {
+      "type": "renal",
+      "condition": "TFG_menor_30",
+      "message": "Reduzir dose para metade, evitar formulações de libertação prolongada"
+    },
+    {
+      "type": "hepatic",
+      "condition": "disfuncao_hepatica",
+      "message": "Monitorizar função hepática - risco de hepatotoxicidade"
+    },
+    {
+      "type": "interaction",
+      "condition": "uso_varfarina",
+      "message": "Monitorizar INR mais frequentemente - risco de hemorragia"
+    },
+    {
+      "type": "pediatric",
+      "condition": "lactente_menos_6_meses",
+      "message": "Risco de estenose pilórica hipertrófica - vigiar vómitos"
+    }
+  ],
+  
+  "clinical_pearls": [
+    "Excelente biodisponibilidade oral (55-70%)",
+    "Metabolito ativo (14-OH claritromicina) com atividade anti-H.pylori",
+    "Concentração tecidular superior à plasmática",
+    "Primeira linha para H. pylori (em combinação)",
+    "Alternativa aos beta-lactâmicos se alergia",
+    "Evitar em doentes com QT longo conhecido",
+    "Suspender se prolongamento QT >500ms",
+    "Formulação IV apenas para casos graves",
+    "Verificar sempre interações antes de prescrever"
+  ],
+  
+  "references": [
+    {
+      "type": "primary",
+      "source": "RCM Claritromicina",
+      "url": "https://extranet.infarmed.pt/",
+      "date_accessed": "2025-01-01"
+    },
+    {
+      "type": "guideline",
+      "source": "Consenso Nacional H. pylori 2021",
+      "year": 2021
+    },
+    {
+      "type": "guideline",
+      "source": "Guidelines ERS/ESID - Pneumonia",
+      "year": 2023
+    },
+    {
+      "type": "safety",
+      "source": "Alerta Infarmed - Macrólidos e Prolongamento QT",
+      "year": 2022
+    }
+  ]
+}

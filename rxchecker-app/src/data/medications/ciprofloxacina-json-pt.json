@@ -1,0 +1,536 @@
+{
+  "id": "ciprofloxacina",
+  "name": "Ciprofloxacina",
+  "generic_name": "ciprofloxacina",
+  "brand_names": ["Ciproxin", "Ciflox", "Ciprofloxacina Generis"],
+  "atc_code": "J01MA02",
+  "therapeutic_class": "Antibacteriano - Fluoroquinolona",
+  "prescription_status": "MSRM",
+  "last_updated": "2025-01-01",
+  
+  "drug_action": {
+    "title": "Mecanismo de Ação",
+    "content": "A ciprofloxacina é uma fluoroquinolona de amplo espetro que inibe as enzimas bacterianas DNA girase e topoisomerase IV, essenciais para a replicação, transcrição e reparação do DNA bacteriano.",
+    "source": {
+      "type": "RCM",
+      "reference": "RCM Ciprofloxacina - Secção 5.1"
+    }
+  },
+  
+  "sections": {
+    "indications": {
+      "title": "Indicações e Posologia",
+      "content": {
+        "primary_indications": [
+          "Infeções do trato respiratório (incluindo exacerbações de DPOC)",
+          "Infeções do trato urinário (ITU complicadas e não complicadas)",
+          "Infeções da pele e tecidos moles",
+          "Infeções gastrointestinais (incluindo diarreia do viajante)",
+          "Infeções intra-abdominais (em combinação)",
+          "Profilaxia da meningite meningocócica",
+          "Antraz (tratamento e profilaxia)"
+        ],
+        "dosage": [
+          {
+            "indication": "ITU não complicada",
+            "route": "Oral",
+            "dose": "250-500 mg duas vezes por dia",
+            "duration": "3-7 dias"
+          },
+          {
+            "indication": "ITU complicada / Pielonefrite",
+            "route": "Oral",
+            "dose": "500-750 mg duas vezes por dia",
+            "duration": "7-14 dias"
+          },
+          {
+            "indication": "ITU complicada / Pielonefrite",
+            "route": "IV",
+            "dose": "400 mg cada 8-12 horas",
+            "infusion_time": "60 minutos"
+          },
+          {
+            "indication": "Infeções respiratórias",
+            "route": "Oral",
+            "dose": "500-750 mg duas vezes por dia",
+            "duration": "7-14 dias"
+          },
+          {
+            "indication": "Infeções respiratórias graves",
+            "route": "IV",
+            "dose": "400 mg cada 8-12 horas",
+            "infusion_time": "60 minutos"
+          },
+          {
+            "indication": "Fibrose quística (Pseudomonas)",
+            "route": "Oral",
+            "dose": "750 mg duas vezes por dia",
+            "duration": "14 dias",
+            "notes": "Apenas adultos"
+          },
+          {
+            "indication": "Prostatite aguda",
+            "route": "Oral",
+            "dose": "500 mg duas vezes por dia",
+            "duration": "14-28 dias"
+          },
+          {
+            "indication": "Gonorreia não complicada",
+            "route": "Oral",
+            "dose": "500 mg dose única",
+            "notes": "Apenas se sensibilidade confirmada"
+          },
+          {
+            "indication": "Profilaxia meningite meningocócica",
+            "route": "Oral",
+            "dose": "500 mg dose única (adultos)",
+            "pediatric_doses": [
+              "1-11 meses: 30 mg/kg (máx 125 mg)",
+              "1-4 anos: 125 mg",
+              "5-11 anos: 250 mg",
+              "12-17 anos: 500 mg"
+            ]
+          },
+          {
+            "indication": "Antraz (tratamento/profilaxia)",
+            "route": "Oral",
+            "dose": "500 mg duas vezes por dia",
+            "duration": "60 dias (profilaxia pós-exposição)"
+          }
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Ciprofloxacina - Secção 4.2"
+      }
+    },
+    
+    "safety_warnings": {
+      "title": "Informações Importantes de Segurança",
+      "content": {
+        "tendon_damage": {
+          "warning": "Lesão dos tendões (incluindo rutura) reportada raramente",
+          "risk_factors": [
+            "Idade >60 anos",
+            "Uso concomitante de corticosteroides",
+            "Transplante de órgão sólido",
+            "Insuficiência renal",
+            "Atividade física intensa prévia"
+          ],
+          "action": "Descontinuar imediatamente se tendinite suspeita"
+        },
+        "aortic_events": {
+          "warning": "Risco pequeno mas aumentado de aneurisma e dissecção aórtica",
+          "risk_factors": [
+            "História familiar de aneurisma",
+            "Aneurisma aórtico pré-existente",
+            "Síndrome de Marfan ou Ehlers-Danlos",
+            "Arterite de Takayasu, arterite de células gigantes",
+            "Hipertensão, aterosclerose conhecida"
+          ],
+          "symptoms": "Dor súbita e intensa abdominal, torácica ou dorsal"
+        },
+        "neuropsychiatric": {
+          "warning": "Efeitos adversos neuropsiquiátricos graves",
+          "symptoms": [
+            "Convulsões",
+            "Aumento da pressão intracraniana",
+            "Neuropatia periférica",
+            "Depressão, psicose",
+            "Pensamentos ou comportamentos suicidas"
+          ],
+          "action": "Descontinuar aos primeiros sinais"
+        },
+        "cardiac": {
+          "warning": "Risco de regurgitação valvular cardíaca",
+          "risk_factors": [
+            "Doença valvular congénita ou pré-existente",
+            "Doenças do tecido conjuntivo",
+            "Hipertensão, síndrome de Turner, doença de Behçet"
+          ]
+        }
+      },
+      "prescribing_restrictions": "Usar apenas quando outros antibióticos comumente recomendados são inadequados",
+      "source": {
+        "type": "Alerta regulamentar",
+        "reference": "Infarmed - Alerta de Segurança Fluoroquinolonas 2019-2024"
+      }
+    },
+    
+    "contraindications": {
+      "title": "Contraindicações",
+      "content": [
+        "Hipersensibilidade às quinolonas",
+        "História de lesões dos tendões relacionadas com o uso de quinolonas",
+        "Gravidez e aleitamento (exceto antraz e profilaxia meningocócica)",
+        "Idade <18 anos (exceto indicações específicas)",
+        "Miastenia gravis (risco de exacerbação)"
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Ciprofloxacina - Secção 4.3"
+      }
+    },
+    
+    "cautions": {
+      "title": "Precauções",
+      "content": [
+        "Epilepsia ou história de convulsões",
+        "Diabetes mellitus (pode afetar glicemia)",
+        "Deficiência de G6PD",
+        "Miastenia gravis (risco de exacerbação)",
+        "Doença cardíaca (prolongamento QT)",
+        "Distúrbios eletrolíticos (hipocaliemia, hipomagnesemia)",
+        "Insuficiência renal (ajustar dose)",
+        "Evitar exposição excessiva ao sol/UV durante tratamento",
+        "Manter ingestão adequada de líquidos (prevenir cristalúria)"
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Ciprofloxacina - Secção 4.4"
+      }
+    },
+    
+    "interactions": {
+      "title": "Interações Medicamentosas",
+      "content": [
+        {
+          "category": "Quelantes (Reduzem Absorção)",
+          "drugs": [
+            {
+              "name": "Antiácidos (Mg²⁺, Al³⁺, Ca²⁺)",
+              "effect": "Redução significativa da absorção",
+              "management": "Tomar ciprofloxacina 2h antes ou 6h depois"
+            },
+            {
+              "name": "Ferro, zinco",
+              "effect": "Redução da absorção",
+              "management": "Intervalo de 2h antes ou 6h depois"
+            },
+            {
+              "name": "Sucralfato",
+              "effect": "Redução marcada da absorção",
+              "management": "Evitar uso concomitante"
+            }
+          ]
+        },
+        {
+          "category": "Prolongamento QT",
+          "drugs": [
+            {
+              "name": "Amiodarona, sotalol, antipsicóticos",
+              "effect": "Risco aumentado de arritmias",
+              "management": "Monitorizar ECG se uso concomitante necessário"
+            }
+          ]
+        },
+        {
+          "category": "Metabolismo CYP1A2",
+          "drugs": [
+            {
+              "name": "Teofilina",
+              "effect": "Aumento dos níveis de teofilina (inibição CYP1A2)",
+              "management": "Monitorizar níveis, reduzir dose de teofilina"
+            },
+            {
+              "name": "Cafeína",
+              "effect": "Redução da clearance da cafeína",
+              "management": "Limitar ingestão de cafeína"
+            }
+          ]
+        },
+        {
+          "category": "Anticoagulantes",
+          "drugs": [
+            {
+              "name": "Varfarina",
+              "effect": "Potenciação do efeito anticoagulante",
+              "management": "Monitorizar INR mais frequentemente"
+            }
+          ]
+        },
+        {
+          "category": "Outros",
+          "drugs": [
+            {
+              "name": "Ciclosporina",
+              "effect": "Aumento da nefrotoxicidade",
+              "management": "Monitorizar função renal"
+            },
+            {
+              "name": "AINEs",
+              "effect": "Risco aumentado de convulsões",
+              "management": "Usar com precaução"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Ciprofloxacina - Secção 4.5"
+      }
+    },
+    
+    "side_effects": {
+      "title": "Efeitos Adversos",
+      "content": {
+        "common": [
+          "Náuseas, vómitos, diarreia",
+          "Dor abdominal",
+          "Cefaleias, tonturas",
+          "Insónia",
+          "Alterações do paladar",
+          "Erupção cutânea",
+          "Artralgia",
+          "Aumento das transaminases"
+        ],
+        "uncommon": [
+          "Candidíase",
+          "Eosinofilia, leucopenia",
+          "Ansiedade, agitação",
+          "Convulsões",
+          "Parestesias",
+          "Distúrbios visuais e auditivos",
+          "Taquicardia, hipotensão",
+          "Hepatite",
+          "Fotossensibilidade",
+          "Artrite",
+          "Insuficiência renal aguda"
+        ],
+        "serious": [
+          "Colite associada ao Clostridioides difficile",
+          "Síndrome de Stevens-Johnson, necrólise epidérmica tóxica",
+          "Rutura de tendões",
+          "Neuropatia periférica (pode ser irreversível)",
+          "Psicose, depressão, ideação suicida",
+          "Aneurisma/dissecção aórtica",
+          "Regurgitação valvular cardíaca",
+          "Hipoglicemia grave",
+          "Reações de fotossensibilidade graves"
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Ciprofloxacina - Secção 4.8"
+      }
+    },
+    
+    "special_populations": {
+      "title": "Populações Especiais",
+      "content": {
+        "pregnancy": {
+          "category": "Evitar",
+          "description": "Evitar na gravidez - artropatia em estudos animais",
+          "exceptions": "Pode ser usada em situações que ponham a vida em risco (antraz, meningite)"
+        },
+        "lactation": {
+          "safety": "Evitar",
+          "description": "Pequenas quantidades excretadas no leite materno",
+          "notes": "Risco teórico de artropatia no lactente"
+        },
+        "pediatric": {
+          "restrictions": "Limitado a indicações específicas",
+          "approved_uses": [
+            "ITU complicadas",
+            "Infeções respiratórias por Pseudomonas na fibrose quística",
+            "Profilaxia e tratamento do antraz por inalação",
+            "Profilaxia da meningite meningocócica"
+          ],
+          "notes": "Risco de artropatia - benefício deve superar risco"
+        },
+        "elderly": {
+          "considerations": [
+            "Maior risco de efeitos adversos",
+            "Especialmente lesões dos tendões",
+            "Ajustar conforme função renal",
+            "Monitorização mais frequente"
+          ]
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Ciprofloxacina - Secção 4.6"
+      }
+    },
+    
+    "renal_impairment": {
+      "title": "Insuficiência Renal",
+      "content": {
+        "normal": "TFG >60 mL/min: Dose normal",
+        "mild_moderate": "TFG 30-60 mL/min: 250-500 mg cada 12h (oral) ou 200-400 mg cada 12h (IV)",
+        "severe": "TFG <30 mL/min: 250-500 mg cada 24h (oral) ou 200-400 mg cada 24h (IV)",
+        "dialysis": "Dose após diálise em doentes em hemodiálise",
+        "notes": "Ajustar dose conforme gravidade da infeção e função renal"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Ciprofloxacina - Secção 4.2"
+      }
+    },
+    
+    "monitoring": {
+      "title": "Monitorização",
+      "content": {
+        "baseline": [
+          "Função renal (creatinina, TFG)",
+          "Função hepática",
+          "Hemograma",
+          "ECG se fatores de risco para prolongamento QT"
+        ],
+        "ongoing": [
+          {
+            "parameter": "Sinais de tendinite",
+            "frequency": "Diariamente",
+            "action": "Descontinuar imediatamente se suspeita"
+          },
+          {
+            "parameter": "Sintomas neuropsiquiátricos",
+            "frequency": "Continuamente",
+            "action": "Descontinuar se sintomas graves"
+          },
+          {
+            "parameter": "Função renal",
+            "frequency": "Se tratamento prolongado ou fatores de risco",
+            "notes": "Especialmente importante em idosos"
+          },
+          {
+            "parameter": "Glicemia",
+            "frequency": "Se diabético",
+            "alert": "Risco de hipoglicemia"
+          }
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Ciprofloxacina - Secção 4.4"
+      }
+    },
+    
+    "administration": {
+      "title": "Administração",
+      "content": {
+        "oral": {
+          "timing": "Pode ser tomada com ou sem alimentos",
+          "food_effect": "Alimentos podem atrasar absorção mas não reduzem significativamente",
+          "fluids": "Ingerir com abundante líquido",
+          "spacing": "Manter intervalo de 2h antes ou 6h depois de quelantes"
+        },
+        "iv": {
+          "dilution": "Diluir em glicose 5% ou NaCl 0,9%",
+          "concentration": "Máximo 2 mg/mL",
+          "infusion_time": "60 minutos (400 mg)",
+          "compatibility": "Não misturar com soluções alcalinas"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Ciprofloxacina - Secção 6.6"
+      }
+    },
+    
+    "forms": {
+      "title": "Formas Farmacêuticas",
+      "content": [
+        {
+          "form": "Comprimidos revestidos por película",
+          "strengths": ["250 mg", "500 mg", "750 mg"],
+          "pack_sizes": ["10 comp", "20 comp"]
+        },
+        {
+          "form": "Solução para perfusão",
+          "strengths": ["2 mg/mL (100 mL)", "2 mg/mL (200 mL)"],
+          "pack_sizes": ["1 frasco", "10 frascos"]
+        },
+        {
+          "form": "Colírio",
+          "strengths": ["3 mg/mL"],
+          "pack_sizes": ["5 mL"]
+        },
+        {
+          "form": "Solução auricular",
+          "strengths": ["2 mg/mL"],
+          "pack_sizes": ["10 mL"]
+        }
+      ],
+      "source": {
+        "type": "Infomed",
+        "reference": "Base de dados do Infarmed"
+      }
+    }
+  },
+  
+  "calculators": [
+    {
+      "id": "renal_dosing",
+      "name": "Ajuste Renal para Ciprofloxacina",
+      "type": "renal_adjustment",
+      "applicable": true,
+      "description": "Calcular dose ajustada conforme função renal",
+      "parameters": {
+        "gfr_ranges": {
+          ">60": "Dose normal",
+          "30-60": "Dose normal cada 12h",
+          "<30": "50% dose cada 24h"
+        }
+      }
+    }
+  ],
+  
+  "alerts": [
+    {
+      "type": "tendon",
+      "condition": "idade_maior_60",
+      "message": "ALERTA: Risco aumentado de lesão dos tendões - monitorizar sintomas de tendinite"
+    },
+    {
+      "type": "interaction",
+      "condition": "uso_antiácidos",
+      "message": "Administrar ciprofloxacina 2h antes ou 6h depois de antiácidos"
+    },
+    {
+      "type": "neurological",
+      "condition": "sintomas_neurologicos",
+      "message": "Descontinuar imediatamente se convulsões, neuropatia ou sintomas psiquiátricos"
+    },
+    {
+      "type": "cardiac",
+      "condition": "fatores_risco_qt",
+      "message": "Monitorizar ECG - risco de prolongamento QT"
+    },
+    {
+      "type": "renal",
+      "condition": "TFG_menor_30",
+      "message": "Ajustar dose: administrar cada 24h em vez de 12h"
+    }
+  ],
+  
+  "clinical_pearls": [
+    "Primeira escolha apenas quando outros antibióticos inadequados",
+    "Excelente biodisponibilidade oral (70-80%)",
+    "Boa penetração tecidular, incluindo próstata",
+    "Ativa contra Pseudomonas aeruginosa",
+    "Evitar em atletas ou atividade física intensa",
+    "Descontinuar aos primeiros sinais de tendinite",
+    "Educar sobre fotossensibilidade",
+    "Não usar profilaxia rotineira em cirurgia"
+  ],
+  
+  "references": [
+    {
+      "type": "primary",
+      "source": "RCM Ciprofloxacina",
+      "url": "https://extranet.infarmed.pt/",
+      "date_accessed": "2025-01-01"
+    },
+    {
+      "type": "safety_alert",
+      "source": "Infarmed - Alerta Fluoroquinolonas",
+      "year": 2024
+    },
+    {
+      "type": "guideline",
+      "source": "Guidelines ESID - Imunodeficiências",
+      "year": 2023
+    }
+  ]
+}

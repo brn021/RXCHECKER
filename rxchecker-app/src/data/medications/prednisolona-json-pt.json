@@ -1,0 +1,900 @@
+{
+  "id": "prednisolona",
+  "name": "Prednisolona",
+  "generic_name": "prednisolona",
+  "brand_names": ["Prednisolona Generis", "Prednisolona Labesfal", "Predsol"],
+  "atc_code": "H02AB06",
+  "therapeutic_class": "Corticosteroide sistémico - Glicocorticoide",
+  "prescription_status": "MSRM",
+  "last_updated": "2025-01-01",
+  
+  "drug_action": {
+    "title": "Mecanismo de Ação",
+    "content": "A prednisolona exerce predominantemente efeitos glicocorticoides com mínimos efeitos mineralocorticoides. Atua através de recetores intracelulares de glicocorticoides, modulando a expressão genética e produzindo efeitos anti-inflamatórios, imunossupressores e metabólicos.",
+    "effects": {
+      "anti_inflammatory": "Inibição fosfolipase A2, redução prostaglandinas e leucotrienos",
+      "immunosuppressive": "Supressão linfócitos T, redução citocinas pró-inflamatórias",
+      "metabolic": "Gluconeogénese, redistribuição gordura, catabolismo proteico"
+    },
+    "potency": {
+      "glucocorticoid": "4x hidrocortisona",
+      "mineralocorticoid": "0,8x hidrocortisona",
+      "duration": "12-36 horas (intermédia)"
+    },
+    "source": {
+      "type": "RCM",
+      "reference": "RCM Prednisolona - Secção 5.1"
+    }
+  },
+  
+  "sections": {
+    "indications": {
+      "title": "Indicações e Posologia",
+      "content": {
+        "primary_indications": [
+          "Doenças inflamatórias e alérgicas",
+          "Doenças autoimunes e reumatológicas",
+          "Asma e DPOC (exacerbações)",
+          "Doenças hematológicas",
+          "Doenças dermatológicas",
+          "Doenças gastrointestinais (DII)",
+          "Doenças neurológicas",
+          "Transplante de órgãos",
+          "Oncologia (adjuvante)"
+        ],
+        "dosage_by_indication": [
+          {
+            "indication": "Exacerbação aguda DPOC",
+            "dose": "30 mg uma vez por dia",
+            "duration": "5 dias",
+            "timing": "De manhã após pequeno-almoço",
+            "notes": "Se dispneia interfere atividades diárias"
+          },
+          {
+            "indication": "Asma aguda ligeira-moderada",
+            "population": "Adulto",
+            "dose": "40-50 mg uma vez por dia",
+            "duration": "≥5 dias",
+            "timing": "De manhã"
+          },
+          {
+            "indication": "Asma aguda grave/ameaça vida",
+            "population": "Adulto",
+            "dose": "40-50 mg uma vez por dia",
+            "duration": "≥5 dias, mais tempo se necessário"
+          },
+          {
+            "indication": "Asma aguda",
+            "population": "Criança 1m-11a",
+            "dose": "1-2 mg/kg uma vez por dia (máx 40 mg)",
+            "duration": "≤3 dias, mais tempo se necessário",
+            "alternative": "2 mg/kg (máx 60 mg) se corticosteroide >alguns dias"
+          },
+          {
+            "indication": "Asma aguda",
+            "population": "Criança 12-17a",
+            "dose": "40-50 mg uma vez por dia",
+            "duration": "≥5 dias"
+          },
+          {
+            "indication": "Crupe grave/moderado com complicações",
+            "population": "Criança",
+            "dose": "1-2 mg/kg",
+            "timing": "Antes transferência hospitalar"
+          },
+          {
+            "indication": "Supressão inflamatória/alérgica",
+            "population": "Adulto",
+            "initial_dose": "10-20 mg uma vez por dia de manhã após pequeno-almoço",
+            "severe_initial": "Até 60 mg uma vez por dia em doença grave",
+            "maintenance": "2,5-15 mg por dia",
+            "notes": "Dose pode ser reduzida após dias mas pode necessitar semanas/meses"
+          },
+          {
+            "indication": "Púrpura trombocitopénica idiopática",
+            "dose": "1 mg/kg diariamente",
+            "management": "Reduzir gradualmente durante várias semanas"
+          },
+          {
+            "indication": "Colite ulcerosa/Doença Crohn",
+            "initial_dose": "20-40 mg uma vez por dia até remissão",
+            "maintenance": "Doses reduzidas",
+            "severe_cases": "Até 60 mg por dia podem ser usados",
+            "timing": "De manhã após pequeno-almoço"
+          },
+          {
+            "indication": "Artrite reumatoide (moderada-grave <2 anos)",
+            "dose": "7,5 mg diariamente",
+            "purpose": "Redução taxa destruição articular"
+          },
+          {
+            "indication": "Polimialgia reumática",
+            "initial_dose": "10-15 mg diariamente até remissão",
+            "maintenance": "7,5-10 mg diariamente",
+            "duration": "Muitos doentes requerem ≥2 anos, alguns longo prazo",
+            "reduction": "Reduzir gradualmente para dose manutenção"
+          },
+          {
+            "indication": "Arterite células gigantes (temporal)",
+            "initial_dose": "40-60 mg diariamente até remissão",
+            "high_dose": "Dose maior se sintomas visuais",
+            "maintenance": "7,5-10 mg diariamente",
+            "duration": "≥2 anos, alguns longo prazo"
+          },
+          {
+            "indication": "Poliarterite nodosa/Polimiosite/LES",
+            "initial_dose": "60 mg diariamente",
+            "maintenance": "10-15 mg diariamente",
+            "reduction": "Reduzir gradualmente"
+          },
+          {
+            "indication": "Miastenia gravis generalizada (dias alternos)",
+            "initial_dose": "10 mg em dias alternos",
+            "titration": "Aumentar 10 mg em dias alternos até 1-1,5 mg/kg (máx 100 mg)",
+            "ventilated_patients": "1,5 mg/kg (máx 100 mg) em dias alternos"
+          },
+          {
+            "indication": "Miastenia gravis generalizada (diário)",
+            "initial_dose": "5 mg diariamente",
+            "titration": "Aumentar 5 mg diariamente",
+            "maintenance": "60-80 mg diariamente ou 0,75-1 mg/kg diariamente"
+          },
+          {
+            "indication": "Miastenia ocular",
+            "dose": "10-40 mg uma vez por dia em dias alternos",
+            "goal": "Reduzir para dose mínima eficaz"
+          },
+          {
+            "indication": "Cefaleia cluster episódica (profilaxia curta)",
+            "initial_dose": "60-100 mg uma vez por dia",
+            "duration": "2-5 dias",
+            "reduction": "Reduzir 10 mg cada 2-3 dias até descontinuação",
+            "combination": "Monoterapia ou com verapamil durante titulação"
+          },
+          {
+            "indication": "Pneumonia Pneumocystis (VIH moderada-grave)",
+            "dose": "50-80 mg diariamente durante 5 dias",
+            "schedule": "Depois reduzir para completar 21 dias tratamento",
+            "timing": "Iniciar com anti-Pneumocystis, máximo 24-72h depois",
+            "withdrawal": "Suspender antes completar anti-Pneumocystis"
+          },
+          {
+            "indication": "COVID-19 (necessita O2 suplementar)",
+            "dose": "40 mg uma vez por dia",
+            "duration": "10 dias ou até alta (o que for primeiro)",
+            "alternative": "Quando dexametasona não disponível"
+          },
+          {
+            "indication": "Controlo sintomas anorexia (cuidados paliativos)",
+            "dose": "15-30 mg diariamente"
+          }
+        ],
+        "topical_dosing": [
+          {
+            "indication": "Inflamação ocular local (curta duração)",
+            "route": "Tópica ocular",
+            "dose": "Aplicar cada 1-2 horas até controlo, depois reduzir frequência",
+            "populations": "Criança e adulto"
+          },
+          {
+            "indication": "Inflamação eczematosa otite externa",
+            "route": "Tópica auricular",
+            "dose": "2-3 gotas cada 2-3 horas",
+            "frequency_reduction": "Reduzir quando alívio obtido",
+            "populations": "Criança e adulto"
+          }
+        ],
+        "rectal_dosing": [
+          {
+            "indication": "Proctite",
+            "route": "Espuma retal",
+            "dose": "1 aplicação medida 1-2 vezes por dia durante 2 semanas",
+            "continuation": "Continuar mais 2 semanas se boa resposta",
+            "content": "1 aplicação = 20 mg prednisolona"
+          },
+          {
+            "indication": "Proctite",
+            "route": "Supositórios",
+            "dose": "5 mg duas vezes por dia",
+            "timing": "Manhã e noite, após dejeção"
+          },
+          {
+            "indication": "Colite ulcerosa distal",
+            "route": "Espuma retal",
+            "dose": "1 aplicação 1-2 vezes por dia durante 2 semanas",
+            "continuation": "Continuar mais 2 semanas se boa resposta"
+          },
+          {
+            "indication": "Complicações retais doença Crohn",
+            "route": "Supositórios",
+            "dose": "5 mg duas vezes por dia",
+            "timing": "Manhã e noite, após dejeção"
+          },
+          {
+            "indication": "Colite ulcerosa retal/rectosigmoideia",
+            "route": "Enema",
+            "dose": "20 mg uma vez por dia durante 2-4 semanas",
+            "timing": "Ao deitar",
+            "continuation": "Continuar se boa resposta"
+          }
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Prednisolona - Secção 4.2"
+      }
+    },
+    
+    "contraindications": {
+      "title": "Contraindicações",
+      "content": [
+        "Infeções sistémicas (exceto se terapêutica específica dada)",
+        "Vacinas vivas (em doses imunossupressoras)",
+        "Hipersensibilidade prednisolona"
+      ],
+      "specific_routes": {
+        "auricular": "Evitar isoladamente presença infeção não tratada (combinar anti-infecioso)",
+        "retal": [
+          "Infeção abdominal ou local",
+          "Perfuração intestinal",
+          "Fístulas extensas",
+          "Obstrução intestinal",
+          "Anastomoses intestinais recentes"
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Prednisolona - Secção 4.3"
+      }
+    },
+    
+    "cautions": {
+      "title": "Precauções",
+      "content": [
+        "Insuficiência cardíaca congestiva",
+        "Diabetes mellitus (incluindo história familiar)",
+        "Doença diverticular (risco perfuração)",
+        "Diverticulite",
+        "Epilepsia",
+        "Glaucoma (incluindo história familiar/suscetibilidade)",
+        "História miopatia esteroides",
+        "História tuberculose/alterações radiológicas (monitorização frequente)",
+        "Hipertensão",
+        "Hipotiroidismo",
+        "Infeção (particularmente não tratada)",
+        "Uso longo prazo",
+        "Miastenia gravis",
+        "Herpes simples ocular (risco perfuração corneal)",
+        "Osteoporose (crianças)",
+        "Osteoporose (mulheres pós-menopausa e idosos)",
+        "Úlcera péptica",
+        "Reações psiquiátricas",
+        "Anastomoses intestinais recentes",
+        "Enfarte miocárdio recente (rutura reportada)",
+        "Distúrbios afetivos graves (especialmente história psicose esteroides)",
+        "Distúrbios tromboembólicos",
+        "Colite ulcerosa"
+      ],
+      "special_populations": {
+        "elderly_stopp": [
+          "Se usado em vez corticosteroides inalados manutenção DPOC moderada-grave (exposição desnecessária efeitos longo prazo)",
+          "Monoterapia longo prazo (>3 meses) artrite reumatoide (risco efeitos adversos)",
+          "Tratamento osteoartrite exceto injeções intra-articulares periódicas dor monoarticular (risco efeitos adversos)",
+          "Com AINEs concomitantes sem proteção gástrica (risco doença úlcera péptica)"
+        ],
+        "specific_cautions": {
+          "auricular": "Evitar uso prolongado",
+          "ocular": "Uso concomitante AINEs oculares",
+          "retal": "Absorção sistémica pode ocorrer",
+          "systemic": [
+            "Distrofia muscular Duchenne (possível rabdomiólise/mioglobinúria após atividade física)",
+            "Esclerose sistémica (incidência aumentada crise renal esclerodermia dose ≥15 mg/dia)"
+          ]
+        }
+      },
+      "source": {
+        "type": "RCM", 
+        "reference": "RCM Prednisolona - Secção 4.4"
+      }
+    },
+    
+    "interactions": {
+      "title": "Interações Medicamentosas",
+      "content": [
+        {
+          "category": "Redução Eficácia Prednisolona",
+          "drugs": [
+            {
+              "name": "Indutores enzimáticos (rifampicina, carbamazepina, fenitoína)",
+              "effect": "Aumento metabolismo prednisolona",
+              "management": "Pode necessitar aumento dose prednisolona"
+            },
+            {
+              "name": "Efedrina",
+              "effect": "Aumento clearance prednisolona",
+              "management": "Monitorizar eficácia"
+            }
+          ]
+        },
+        {
+          "category": "Aumento Toxicidade Prednisolona",
+          "drugs": [
+            {
+              "name": "Inibidores CYP3A4 (ketoconazol, ciclosporina)",
+              "effect": "Redução metabolismo",
+              "management": "Considerar redução dose prednisolona"
+            },
+            {
+              "name": "Estrogénios, contracetivos orais",
+              "effect": "Aumento níveis prednisolona",
+              "management": "Monitorizar efeitos adversos"
+            }
+          ]
+        },
+        {
+          "category": "Efeitos Metabólicos",
+          "drugs": [
+            {
+              "name": "Diuréticos (tiazidas, ansa)",
+              "effect": "Hipocaliemia aditiva",
+              "management": "Monitorizar K⁺, suplementar se necessário"
+            },
+            {
+              "name": "Glicósidos cardíacos (digoxina)",
+              "effect": "Hipocaliemia aumenta toxicidade digitálica",
+              "management": "Monitorizar K⁺ e sinais toxicidade digoxina"
+            },
+            {
+              "name": "Antidiabéticos",
+              "effect": "Antagonismo efeito hipoglicemiante",
+              "management": "Ajustar dose antidiabéticos, monitorizar glicemia"
+            }
+          ]
+        },
+        {
+          "category": "Risco Hemorrágico",
+          "drugs": [
+            {
+              "name": "Anticoagulantes (varfarina)",
+              "effect": "Efeito variável no INR",
+              "management": "Monitorizar INR mais frequentemente"
+            },
+            {
+              "name": "AINEs",
+              "effect": "Risco aumentado úlcera péptica/hemorragia GI",
+              "management": "Usar protetor gástrico, evitar se possível"
+            },
+            {
+              "name": "Aspirina",
+              "effect": "Risco hemorragia, prednisolona reduz níveis salicilatos",
+              "management": "Monitorizar sinais hemorragia"
+            }
+          ]
+        },
+        {
+          "category": "Imunológicas",
+          "drugs": [
+            {
+              "name": "Vacinas vivas",
+              "effect": "Risco infeção generalizada, resposta diminuída",
+              "management": "Contraindicado em doses imunossupressoras"
+            },
+            {
+              "name": "Vacinas inativadas",
+              "effect": "Resposta imune diminuída",
+              "management": "Pode necessitar doses adicionais"
+            }
+          ]
+        },
+        {
+          "category": "Oftálmicas (uso tópico)",
+          "drugs": [
+            {
+              "name": "AINEs oculares",
+              "effect": "Risco problemas cicatrização corneal",
+              "management": "Usar com precaução, pode levar perfuração"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Prednisolona - Secção 4.5"
+      }
+    },
+    
+    "side_effects": {
+      "title": "Efeitos Adversos",
+      "content": {
+        "common_systemic": [
+          "Aumento apetite e peso",
+          "Retenção líquidos",
+          "Hipertensão",
+          "Alterações humor (euforia, depressão, irritabilidade)",
+          "Insónia",
+          "Hiperglicemia",
+          "Hipocaliemia",
+          "Suscetibilidade aumentada infeções",
+          "Atraso cicatrização",
+          "Equimoses fáceis",
+          "Estrias cutâneas",
+          "Acne"
+        ],
+        "serious_systemic": [
+          "Síndrome Cushing iatrogénico",
+          "Supressão eixo hipotálamo-hipófise-adrenal",
+          "Osteoporose/fraturas",
+          "Necrose assética cabeça fémur",
+          "Miopatia esteroides",
+          "Cataratas subcapsulares posteriores",
+          "Glaucoma",
+          "Úlcera péptica/perfuração",
+          "Pancreatite",
+          "Psicose esteroides",
+          "Convulsões",
+          "Tromboembolismo"
+        ],
+        "metabolic_endocrine": [
+          "Diabetes mellitus secundário",
+          "Amenorreia",
+          "Hirsutismo",
+          "Atraso crescimento (crianças)",
+          "Obesidade central",
+          "Face lunar",
+          "Giba buffalo"
+        ],
+        "topical_specific": {
+          "ocular": [
+            "Desconforto ocular",
+            "Alteração paladar",
+            "Compromisso visual"
+          ],
+          "auricular": "Reação local",
+          "systemic_absorption": "Considerar efeitos sistémicos com uso tópico/retal"
+        },
+        "withdrawal_effects": [
+          "Insuficiência adrenal aguda",
+          "Hipotensão",
+          "Morte (se suspensão abrupta)",
+          "Febre, mialgia, artralgia",
+          "Rinite, conjuntivite",
+          "Nódulos cutâneos dolorosos",
+          "Perda peso"
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Prednisolona - Secção 4.8"
+      }
+    },
+    
+    "special_populations": {
+      "title": "Populações Especiais",
+      "content": {
+        "pregnancy": {
+          "safety": "Benefício supera risco",
+          "evidence": "Não há evidência convincente aumento anormalidades congénitas",
+          "effects": [
+            "Uso prolongado/repetido: risco restrição crescimento intrauterino",
+            "Supressão adrenal neonatal (resolve espontaneamente)",
+            "Atravessa placenta mas 88% prednisolona inativada"
+          ],
+          "monitoring": "Mulheres pré-eclâmpsia/retenção líquidos: monitorizar cuidadosamente",
+          "labor": "Cobertura corticosteroide necessária durante parto"
+        },
+        "lactation": {
+          "safety": "Benefício supera risco",
+          "excretion": "Pequenas quantidades leite materno",
+          "safety_threshold": "Doses maternas até 40 mg/dia improvável causar efeitos sistémicos lactente",
+          "monitoring": "Lactente monitorizado supressão adrenal se mãe >40 mg/dia"
+        },
+        "pediatric": {
+          "considerations": [
+            "Monitorizar pressão arterial e glucose urinária semanalmente",
+            "Risco atraso crescimento",
+            "Monitorizar desenvolvimento",
+            "Ajustar dose conforme peso",
+            "Efeitos aditivos com vigabatrina (espasmos infantis)"
+          ]
+        },
+        "elderly": {
+          "considerations": [
+            "Maior risco efeitos adversos",
+            "Especialmente osteoporose/fraturas",
+            "Diabetes, hipertensão, infeções",
+            "Iniciar doses menores se apropriado",
+            "Monitorização mais frequente"
+          ]
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Prednisolona - Secção 4.6"
+      }
+    },
+    
+    "monitoring": {
+      "title": "Monitorização",
+      "content": {
+        "baseline": [
+          "Pressão arterial",
+          "Peso corporal",
+          "IMC",
+          "Altura (crianças e adolescentes)",
+          "HbA1c",
+          "Triglicéridos",
+          "Potássio",
+          "Exame oftalmológico (glaucoma e cataratas)",
+          "Densitometria óssea (uso prolongado)"
+        ],
+        "ongoing": [
+          {
+            "parameter": "Pressão arterial",
+            "frequency": "Regularmente",
+            "target": "<140/90 mmHg"
+          },
+          {
+            "parameter": "Peso corporal",
+            "frequency": "Regularmente",
+            "alert": "Aumento súbito pode indicar retenção líquidos"
+          },
+          {
+            "parameter": "Glicemia/HbA1c",
+            "frequency": "Conforme juízo clínico",
+            "risk_groups": "Especialmente diabéticos ou pré-diabéticos"
+          },
+          {
+            "parameter": "Potássio sérico",
+            "frequency": "Se uso diuréticos concomitante",
+            "target": ">3,5 mEq/L"
+          },
+          {
+            "parameter": "Densidade óssea",
+            "frequency": "Uso prolongado",
+            "prevention": "Considerar cálcio, vitamina D, bifosfonatos"
+          },
+          {
+            "parameter": "Sinais infeção",
+            "frequency": "Continuamente",
+            "note": "Apresentação pode ser atípica"
+          },
+          {
+            "parameter": "Estado mental",
+            "frequency": "Especialmente início tratamento",
+            "alert": "Alterações humor, psicose"
+          }
+        ],
+        "pediatric_specific": [
+          "Pressão arterial e glucose urinária semanalmente",
+          "Altura e peso regularmente",
+          "Desenvolvimento pubertário"
+        ],
+        "systemic_sclerosis": "Pressão arterial e função renal rotineiramente (risco crise renal)"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Prednisolona - Secção 4.4"
+      }
+    },
+    
+    "withdrawal": {
+      "title": "Descontinuação",
+      "content": {
+        "risk_factors": [
+          "Dose >40 mg prednisolona (ou equiv) >1 semana",
+          "Doses repetidas à noite",
+          "Tratamento >3 semanas",
+          "Cursos repetidos recentes (especialmente >3 semanas)",
+          "Curso curto <1 ano após parar terapêutica longo prazo",
+          "Outras causas possíveis supressão adrenal"
+        ],
+        "safe_discontinuation": "Doença improvável recidivar + tratamento ≤3 semanas + não incluído grupos risco",
+        "gradual_withdrawal": {
+          "phase1": "Redução rápida até doses fisiológicas (equiv prednisolona 7,5 mg/dia)",
+          "phase2": "Redução mais lenta depois",
+          "monitoring": "Avaliação doença durante suspensão (assegurar não recidiva)"
+        },
+        "pediatric_criteria": [
+          "Dose >40 mg prednisolona (equiv) >1 semana ou 2 mg/kg/dia 1 semana ou 1 mg/kg/dia 1 mês",
+          "Doses repetidas à noite",
+          "Tratamento >3 semanas",
+          "Cursos repetidos recentes",
+          "Curso curto <1 ano após parar longo prazo",
+          "Outras causas supressão adrenal"
+        ],
+        "pediatric_safe": "≤3 semanas tratamento + não incluído grupos risco",
+        "pediatric_gradual": "Redução rápida até doses fisiológicas (equiv 2-2,5 mg/m²/dia) depois mais lenta"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Prednisolona - Secção 4.4"
+      }
+    },
+    
+    "forms": {
+      "title": "Formas Farmacêuticas",
+      "content": [
+        {
+          "form": "Comprimidos",
+          "strengths": ["1 mg", "5 mg", "25 mg"],
+          "pack_sizes": ["30 comp", "60 comp"]
+        },
+        {
+          "form": "Comprimidos solúveis",
+          "strengths": ["5 mg"],
+          "pack_sizes": ["30 comp"],
+          "notes": "Dissolver em água antes tomar"
+        },
+        {
+          "form": "Comprimidos gastrorresistentes",
+          "strengths": ["2,5 mg", "5 mg"],
+          "pack_sizes": ["30 comp"],
+          "notes": "Reduzir irritação gástrica"
+        },
+        {
+          "form": "Solução oral",
+          "strengths": ["5 mg/5 mL", "15 mg/5 mL"],
+          "pack_sizes": ["150 mL"],
+          "notes": "Agitar antes usar, medir com seringa"
+        },
+        {
+          "form": "Colírio/gotas auriculares",
+          "strengths": ["0,5%"],
+          "pack_sizes": ["10 mL"],
+          "notes": "Agitar antes usar"
+        },
+        {
+          "form": "Supositórios",
+          "strengths": ["5 mg"],
+          "pack_sizes": ["10 supositórios"]
+        },
+        {
+          "form": "Enema",
+          "strengths": ["20 mg/100 mL"],
+          "pack_sizes": ["7 enemas"]
+        },
+        {
+          "form": "Espuma retal",
+          "strengths": ["20 mg/aplicação"],
+          "pack_sizes": ["14 aplicações"],
+          "notes": "Agitar vigorosamente antes usar"
+        }
+      ],
+      "source": {
+        "type": "Infomed",
+        "reference": "Base de dados do Infarmed"
+      }
+    }
+  },
+  
+  "calculators": [
+    {
+      "id": "corticosteroid_equivalence",
+      "name": "Equivalências de Corticosteroides",
+      "type": "conversion",
+      "applicable": true,
+      "description": "Conversão entre diferentes corticosteroides sistémicos",
+      "reference_drug": "prednisolona",
+      "equivalences": {
+        "hidrocortisona": { 
+          "factor": 4, 
+          "duration": "curta (8-12h)", 
+          "mineralocorticoid": "alta",
+          "notes": "Corticosteroide fisiológico"
+        },
+        "cortisona": { 
+          "factor": 5, 
+          "duration": "curta (8-12h)", 
+          "mineralocorticoid": "alta",
+          "notes": "Pró-fármaco da hidrocortisona"
+        },
+        "prednisolona": { 
+          "factor": 1, 
+          "duration": "intermédia (12-36h)", 
+          "mineralocorticoid": "baixa",
+          "notes": "Referência padrão"
+        },
+        "prednisona": { 
+          "factor": 1, 
+          "duration": "intermédia (12-36h)", 
+          "mineralocorticoid": "baixa",
+          "notes": "Pró-fármaco da prednisolona"
+        },
+        "metilprednisolona": { 
+          "factor": 0.8, 
+          "duration": "intermédia (12-36h)", 
+          "mineralocorticoid": "mínima",
+          "notes": "Menos retenção sódio"
+        },
+        "triamcinolona": { 
+          "factor": 0.8, 
+          "duration": "longa (36-72h)", 
+          "mineralocorticoid": "nenhuma",
+          "notes": "Sem efeito mineralocorticoide"
+        },
+        "dexametasona": { 
+          "factor": 0.15, 
+          "duration": "muito longa (36-72h)", 
+          "mineralocorticoid": "nenhuma",
+          "notes": "Muito potente, supressão HPA prolongada"
+        },
+        "betametasona": { 
+          "factor": 0.15, 
+          "duration": "muito longa (36-72h)", 
+          "mineralocorticoid": "nenhuma",
+          "notes": "Equivalente à dexametasona"
+        }
+      },
+      "conversion_notes": [
+        "Fatores são aproximados - ajustar conforme resposta clínica",
+        "Considerar duração ação para timing doses",
+        "Atividade mineralocorticoide relevante para retenção líquidos/HTA",
+        "Conversões não são exatas para todas indicações"
+      ]
+    },
+    {
+      "id": "tapering_calculator",
+      "name": "Calculadora Redução Gradual",
+      "type": "withdrawal_schedule",
+      "applicable": true,
+      "description": "Planear redução segura prednisolona",
+      "parameters": {
+        "high_dose_phase": "Redução rápida até 7,5 mg/dia (dose fisiológica)",
+        "low_dose_phase": "Redução lenta: 1-2,5 mg cada 1-4 semanas",
+        "factors_slower_taper": [
+          "Uso muito prolongado (>meses)",
+          "Doses muito altas",
+          "História insuficiência adrenal",
+          "Doença subjacente ativa",
+          "Sintomas abstinência prévios"
+        ]
+      },
+      "example_schedules": {
+        "standard_taper_40mg": [
+          "40 mg → 30 mg (1 semana)",
+          "30 mg → 20 mg (1 semana)", 
+          "20 mg → 15 mg (1 semana)",
+          "15 mg → 10 mg (2 semanas)",
+          "10 mg → 7,5 mg (2 semanas)",
+          "7,5 mg → 5 mg (4 semanas)",
+          "5 mg → 2,5 mg (4 semanas)",
+          "2,5 mg → 0 mg (4 semanas)"
+        ]
+      }
+    },
+    {
+      "id": "pediatric_dosing",
+      "name": "Dosagem Pediátrica",
+      "type": "weight_based",
+      "applicable": true,
+      "description": "Calcular doses pediátricas baseadas no peso",
+      "formulas": {
+        "anti_inflammatory": "1-2 mg/kg/dia (máximo 40-60 mg conforme indicação)",
+        "immunosuppressive": "2-4 mg/kg/dia",
+        "physiological": "2-2,5 mg/m²/dia (equivale ~0,5-0,75 mg/kg/dia)"
+      },
+      "age_considerations": [
+        "Lactentes: maior sensibilidade",
+        "Pré-escolares: risco supressão crescimento",
+        "Adolescentes: considerar impacto desenvolvimento pubertário"
+      ]
+    },
+    {
+      "id": "cushingoid_risk",
+      "name": "Risco Efeitos Cushingoides",
+      "type": "risk_calculator",
+      "applicable": true,
+      "description": "Avaliar risco efeitos adversos conforme dose/duração",
+      "risk_levels": {
+        "low_risk": "≤7,5 mg/dia por tempo limitado",
+        "moderate_risk": "7,5-30 mg/dia ou uso prolongado",
+        "high_risk": ">30 mg/dia ou doses elevadas prolongadas"
+      },
+      "monitoring_intensity": {
+        "low_risk": "Monitorização básica",
+        "moderate_risk": "Monitorização regular PA, glicemia, peso",
+        "high_risk": "Monitorização intensiva + profilaxia osteoporose"
+      }
+    }
+  ],
+  
+  "alerts": [
+    {
+      "type": "withdrawal",
+      "condition": "uso_prolongado",
+      "message": "NUNCA suspender abruptamente - risco insuficiência adrenal fatal"
+    },
+    {
+      "type": "infection",
+      "condition": "doses_imunossupressoras",
+      "message": "Evitar vacinas vivas. Infeções podem ter apresentação atípica"
+    },
+    {
+      "type": "diabetes",
+      "condition": "diabetes_preexistente",
+      "message": "Monitorizar glicemia - pode necessitar ajuste antidiabéticos"
+    },
+    {
+      "type": "gi_protection",
+      "condition": "uso_aines_concomitante",
+      "message": "Usar proteção gástrica - risco aumentado úlcera péptica"
+    },
+    {
+      "type": "osteoporosis",
+      "condition": "uso_prolongado",
+      "message": "Considerar profilaxia: cálcio, vitamina D, bifosfonatos"
+    },
+    {
+      "type": "growth",
+      "condition": "pediatrico",
+      "message": "Monitorizar crescimento - risco atraso desenvolvimento"
+    },
+    {
+      "type": "ophthalmologic",
+      "condition": "uso_prolongado",
+      "message": "Vigilância oftalmológica - risco cataratas e glaucoma"
+    },
+    {
+      "type": "psychiatric",
+      "condition": "doses_altas",
+      "message": "Vigiar alterações humor/comportamento - risco psicose esteroides"
+    },
+    {
+      "type": "formulation",
+      "condition": "via_topica",
+      "message": "Absorção sistémica possível - considerar efeitos sistémicos"
+    }
+  ],
+  
+  "clinical_pearls": [
+    "Dose única matinal reduz supressão eixo HPA",
+    "Tomar com alimentos reduz irritação gástrica",
+    "Efeitos cushingoides mais prováveis >7,5 mg/dia",
+    "Redução gradual obrigatória se >3 semanas ou fatores risco",
+    "88% prednisolona inativada na placenta (vs 10% dexametasona)",
+    "Formulações gastrorresistentes reduzem irritação GI",
+    "Monitorização oftalmológica obrigatória uso prolongado",
+    "Profilaxia osteoporose considerar desde início",
+    "Cobertura esteroides necessária cirurgia/stress agudo",
+    "Sintomas 'síndrome abstinência' podem ser supressão adrenal",
+    "Varicela pode ser fatal em imunossuprimidos",
+    "Apresentação infeções pode ser atípica/mascarada",
+    "Diabetes secundário pode desenvolver mesmo sem história",
+    "Crescimento pediátrico: monitorizar altura e desenvolvimento",
+    "Via retal pode ter absorção sistémica significativa"
+  ],
+  
+  "references": [
+    {
+      "type": "primary",
+      "source": "RCM Prednisolona",
+      "url": "https://extranet.infarmed.pt/",
+      "date_accessed": "2025-01-01"
+    },
+    {
+      "type": "guideline",
+      "source": "GINA Guidelines - Asma",
+      "year": 2023
+    },
+    {
+      "type": "guideline",
+      "source": "GOLD Guidelines - DPOC",
+      "year": 2023
+    },
+    {
+      "type": "guideline",
+      "source": "BSR Guidelines - Polimialgia Reumática",
+      "year": 2020
+    },
+    {
+      "type": "guideline",
+      "source": "EULAR Guidelines - Artrite Reumatoide",
+      "year": 2022
+    },
+    {
+      "type": "palliative",
+      "source": "Palliative Care Formulary - Corticosteroides Sistémicos",
+      "url": "https://www.medicinescomplete.com/#/content/palliative/systemic-corticosteroids"
+    }
+  ]
+}

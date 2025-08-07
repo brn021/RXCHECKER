@@ -1,0 +1,624 @@
+{
+  "id": "metformina",
+  "name": "Metformina",
+  "generic_name": "cloridrato de metformina",
+  "brand_names": ["Glucophage", "Metformina Generis", "Diabex", "Risidon"],
+  "atc_code": "A10BA02",
+  "therapeutic_class": "Antidiabético - Biguanida",
+  "prescription_status": "MSRM",
+  "last_updated": "2025-01-01",
+  
+  "drug_action": {
+    "title": "Mecanismo de Ação",
+    "content": "A metformina diminui a glicemia principalmente através da redução da gluconeogénese hepática e aumento da utilização periférica de glucose. Atua apenas na presença de insulina endógena, sendo eficaz apenas se existirem células beta pancreáticas funcionais residuais.",
+    "mechanisms": [
+      "Inibição da gluconeogénese hepática (principal)",
+      "Aumento da captação de glucose muscular",
+      "Redução da absorção intestinal de glucose",
+      "Melhoria da sensibilidade à insulina",
+      "Redução da lipólise (efeito modesto)"
+    ],
+    "source": {
+      "type": "RCM",
+      "reference": "RCM Metformina - Secção 5.1"
+    }
+  },
+  
+  "sections": {
+    "indications": {
+      "title": "Indicações e Posologia",
+      "content": {
+        "primary_indications": [
+          "Diabetes mellitus tipo 2 (monoterapia ou combinação)",
+          "Diabetes mellitus tipo 1 (combinação com insulina, se IMC ≥25 kg/m²)",
+          "Prevenção diabetes tipo 2 (adultos 18-74 anos com fatores risco)",
+          "Síndrome ovário poliquístico (SOP) - não licenciado"
+        ],
+        "dosage": [
+          {
+            "indication": "DM tipo 2 - monoterapia ou combinação",
+            "formulation": "Libertação imediata",
+            "population": "Adulto",
+            "initial_dose": "500 mg uma vez por dia com pequeno-almoço (≥1 semana)",
+            "titration": "500 mg duas vezes por dia com pequeno-almoço e jantar (≥1 semana)",
+            "maintenance": "500 mg três vezes por dia com refeições",
+            "maximum": "2000 mg/dia (alguns doentes até 3000 mg/dia)",
+            "notes": "Aumentar gradualmente para melhor tolerabilidade GI"
+          },
+          {
+            "indication": "DM tipo 2",
+            "formulation": "Libertação prolongada",
+            "initial_dose": "500 mg uma vez por dia com jantar",
+            "titration": "Aumentar gradualmente cada 10-15 dias",
+            "maintenance": "1000-2000 mg uma vez por dia com jantar",
+            "alternative": "1000 mg duas vezes por dia com refeições (se controlo inadequado com dose única)",
+            "maximum": "2000 mg/dia",
+            "notes": "Se controlo inadequado, mudar para formulação libertação imediata"
+          },
+          {
+            "indication": "DM tipo 1 + insulina (IMC ≥25 kg/m²)",
+            "formulation": "Ambas",
+            "dose_schedule": "Igual ao DM tipo 2",
+            "maximum": "2000 mg/dia",
+            "notes": "Sempre em combinação com insulina"
+          },
+          {
+            "indication": "Prevenção DM tipo 2",
+            "formulation": "Libertação prolongada",
+            "population": "Adultos 18-74 anos",
+            "dose_schedule": "Igual tratamento DM tipo 2",
+            "maximum": "2000 mg/dia",
+            "criteria": "Consultar literatura do produto para fatores de risco"
+          },
+          {
+            "indication": "Síndrome ovário poliquístico",
+            "formulation": "Libertação imediata",
+            "population": "Adulto (iniciação por especialista)",
+            "initial_dose": "500 mg uma vez por dia com pequeno-almoço (1 semana)",
+            "titration": "500 mg duas vezes por dia (1 semana)",
+            "maintenance": "1500-1700 mg/dia em 2-3 doses divididas com refeições",
+            "maximum": "2000 mg/dia",
+            "notes": "Indicação não licenciada"
+          }
+        ],
+        "pediatric_dosing": {
+          "age_range": "10-17 anos (uso especializado)",
+          "initial_dose": "500 mg uma vez por dia (≥1 semana)",
+          "maintenance": "Até 2000 mg/dia em 2-3 doses divididas",
+          "notes": "Experiência limitada <10 anos"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Metformina - Secção 4.2"
+      }
+    },
+    
+    "safety_warnings": {
+      "title": "Informações Importantes de Segurança",
+      "content": {
+        "lactic_acidosis": {
+          "warning": "Acidose láctica rara mas potencialmente fatal",
+          "incidence": "~0,03 casos/1000 doentes-ano",
+          "risk_factors": [
+            "Insuficiência renal (TFG <30 mL/min/1,73m²)",
+            "Insuficiência hepática",
+            "Insuficiência cardíaca descompensada",
+            "Hipoxia tecidular",
+            "Desidratação",
+            "Infeção grave, sepsis",
+            "Cirurgia major",
+            "Intoxicação alcoólica aguda"
+          ],
+          "symptoms": [
+            "Náuseas, vómitos, dor abdominal",
+            "Dispneia, hiperventilação",
+            "Hipotermia, cãibras musculares",
+            "Astenia marcada",
+            "pH sanguíneo <7,35, lactato >5 mmol/L"
+          ],
+          "action": "Suspender imediatamente, hospitalização urgente"
+        },
+        "vitamin_b12_deficiency": {
+          "warning": "Deficiência B12 - efeito adverso comum (Alerta Infarmed 2022)",
+          "risk_factors": [
+            "Dose elevada",
+            "Duração tratamento prolongada",
+            "Idade avançada",
+            "Dieta pobre B12",
+            "Malabsorção prévia",
+            "Gastrectomia"
+          ],
+          "symptoms": [
+            "Anemia megaloblástica",
+            "Neuropatia periférica",
+            "Fadiga, fraqueza",
+            "Distúrbios memória/concentração",
+            "Glossite, estomatite"
+          ],
+          "monitoring": "Dosear B12 se suspeita deficiência, considerar monitorização periódica"
+        },
+        "pregnancy_safety": {
+          "update": "Alerta Infarmed Março 2022 - sem preocupações segurança",
+          "indication": "Adjuvante ou alternativa insulina na gravidez se clinicamente indicado",
+          "evidence": "Estudo coorte finlandês não identificou problemas segurança"
+        }
+      },
+      "source": {
+        "type": "Alerta regulamentar",
+        "reference": "Infarmed - Alertas Metformina 2022"
+      }
+    },
+    
+    "contraindications": {
+      "title": "Contraindicações",
+      "content": [
+        "Acidose metabólica aguda (incluindo acidose láctica e cetoacidose diabética)",
+        "Insuficiência renal grave (TFG <30 mL/min/1,73m²)",
+        "Condições que podem causar hipoxia tecidular:",
+        "- Insuficiência cardíaca descompensada",
+        "- Enfarte miocárdio recente",
+        "- Choque",
+        "- Insuficiência respiratória",
+        "- Sepsis",
+        "Insuficiência hepática",
+        "Intoxicação alcoólica aguda",
+        "Alcoolismo crónico",
+        "Desidratação grave",
+        "Hipersensibilidade à metformina"
+      ],
+      "temporary_discontinuation": {
+        "situations": [
+          "Administração contraste iodado (suspender 48h antes e após)",
+          "Cirurgia geral (anestesia geral, espinal, epidural)",
+          "Doença aguda grave (vómitos, diarreia, febre, hipoxia)"
+        ],
+        "reinitiation": "Apenas após confirmação função renal normal"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Metformina - Secção 4.3"
+      }
+    },
+    
+    "cautions": {
+      "title": "Precauções",
+      "content": [
+        "Insuficiência renal ligeira-moderada (monitorizar função renal)",
+        "Risco geral de acidose láctica",
+        "Fármacos que podem alterar função renal",
+        "Insuficiência cardíaca crónica estável (monitorizar função cardíaca)",
+        "Idosos (função renal frequentemente diminuída)",
+        "Cirurgia/procedimentos com contraste (suspensão temporária)",
+        "Deficiência B12 (monitorização)",
+        "Gravidez (pode usar se clinicamente indicado)"
+      ],
+      "elderly_stopp_criteria": {
+        "potentially_inappropriate": "TFG <30 mL/min/1,73m² (contraindicado insuficiência renal grave, risco acidose láctica)"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Metformina - Secção 4.4"
+      }
+    },
+    
+    "interactions": {
+      "title": "Interações Medicamentosas",
+      "content": [
+        {
+          "category": "Risco Acidose Láctica",
+          "drugs": [
+            {
+              "name": "Contrastes iodados",
+              "effect": "Insuficiência renal aguda → acidose láctica",
+              "management": "Suspender metformina 48h antes e após contraste. Confirmar função renal normal antes reintroduzir"
+            },
+            {
+              "name": "Diuréticos (especialmente ansa e tiazidas)",
+              "effect": "Deterioração função renal",
+              "management": "Monitorizar função renal regularmente"
+            },
+            {
+              "name": "IECAs, ARAs, AINEs",
+              "effect": "Risco insuficiência renal funcional",
+              "management": "Vigilância função renal, especialmente início tratamento"
+            }
+          ]
+        },
+        {
+          "category": "Alteração Glicemia",
+          "drugs": [
+            {
+              "name": "Corticosteroides",
+              "effect": "Hiperglicemia, antagonismo efeito antidiabético",
+              "management": "Monitorizar glicemia mais frequentemente, ajustar dose"
+            },
+            {
+              "name": "Beta-2 agonistas (doses altas)",
+              "effect": "Hiperglicemia",
+              "management": "Especial atenção com salbutamol IV ou nebulizações frequentes"
+            },
+            {
+              "name": "Tiazidas e diuréticos relacionados",
+              "effect": "Hiperglicemia",
+              "management": "Monitorizar controlo glicémico"
+            }
+          ]
+        },
+        {
+          "category": "Alteração Farmacocinética",
+          "drugs": [
+            {
+              "name": "Cimetidina",
+              "effect": "Aumento níveis metformina (inibição secreção tubular)",
+              "management": "Monitorizar sinais toxicidade, considerar alternativa antiH2"
+            },
+            {
+              "name": "Álcool",
+              "effect": "Risco acidose láctica (especialmente jejum ou malnutrição)",
+              "management": "Evitar consumo excessivo álcool"
+            }
+          ]
+        },
+        {
+          "category": "Sinergia Terapêutica",
+          "drugs": [
+            {
+              "name": "Insulina",
+              "effect": "Efeito aditivo hipoglicemiante",
+              "management": "Pode necessitar redução dose insulina"
+            },
+            {
+              "name": "Sulfonilureias",
+              "effect": "Risco hipoglicemia",
+              "management": "Iniciar doses baixas, titular gradualmente"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Metformina - Secção 4.5"
+      }
+    },
+    
+    "side_effects": {
+      "title": "Efeitos Adversos",
+      "content": {
+        "very_common": [
+          "Distúrbios gastrointestinais (>10%): náuseas, vómitos, diarreia, dor abdominal, perda apetite"
+        ],
+        "common": [
+          "Alterações paladar (metálico)",
+          "Deficiência vitamina B12 (uso prolongado)",
+          "Diminuição absorção B12/folatos"
+        ],
+        "rare": [
+          "Acidose láctica (potencialmente fatal)",
+          "Hepatite (reversível com suspensão)",
+          "Reações cutâneas (eritema, prurido, urticária)"
+        ],
+        "gi_effects_management": {
+          "prevention": [
+            "Iniciar dose baixa",
+            "Aumentar gradualmente",
+            "Tomar com refeições",
+            "Considerar formulação libertação prolongada"
+          ],
+          "notes": "Efeitos GI mais frequentes no início, geralmente resolvem espontaneamente"
+        },
+        "serious_effects": {
+          "lactic_acidosis": {
+            "frequency": "Muito raro (<0,01%)",
+            "mortality": "~50% se não tratada rapidamente",
+            "monitoring": "Suspeitar se sintomas inespecíficos + fatores risco"
+          }
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Metformina - Secção 4.8"
+      }
+    },
+    
+    "special_populations": {
+      "title": "Populações Especiais",
+      "content": {
+        "pregnancy": {
+          "category": "Segura (atualização 2022)",
+          "indications": [
+            "Diabetes pré-gestacional",
+            "Diabetes gestacional"
+          ],
+          "notes": "Mulheres com diabetes gestacional devem descontinuar após parto",
+          "evidence": "Estudo coorte finlandês sem preocupações segurança"
+        },
+        "lactation": {
+          "safety": "Pode usar em diabetes pré-existente",
+          "excretion": "Excretada leite materno pequenas quantidades",
+          "monitoring": "Vigilância hipoglicemia lactente (improvável)"
+        },
+        "pediatric": {
+          "age_range": "≥10 anos (uso especializado)",
+          "considerations": [
+            "Experiência limitada <10 anos",
+            "Considerar redução dose insuficiência renal moderada",
+            "Crescimento e desenvolvimento normais"
+          ]
+        },
+        "elderly": {
+          "considerations": [
+            "Função renal frequentemente diminuída",
+            "Iniciar doses baixas",
+            "Monitorização função renal mais frequente",
+            "Maior risco acidose láctica",
+            "Cuidado com desidratação"
+          ],
+          "monitoring": "Função renal pelo menos 2x/ano se >65 anos"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Metformina - Secção 4.6"
+      }
+    },
+    
+    "renal_impairment": {
+      "title": "Insuficiência Renal",
+      "content": {
+        "classification": {
+          "normal": "TFG ≥90 mL/min/1,73m²: Dose normal",
+          "mild": "TFG 60-89 mL/min/1,73m²: Dose normal, monitorizar função renal",
+          "moderate": "TFG 30-59 mL/min/1,73m²: Considerar redução dose, monitorização apertada",
+          "severe": "TFG <30 mL/min/1,73m²: CONTRAINDICADO"
+        },
+        "dose_adjustments": {
+          "moderate_impairment": "TFG 30-45 mL/min/1,73m²: Considerar redução 50% dose",
+          "monitoring_frequency": "TFG 45-60: cada 3-6 meses; TFG 30-45: cada 3 meses"
+        },
+        "temporary_discontinuation": {
+          "situations": [
+            "Doença aguda com risco desidratação",
+            "Uso contrastes iodados",
+            "Cirurgia major",
+            "Deterioração aguda função renal"
+          ]
+        },
+        "creatinine_calculation": "Usar fórmula Cockcroft-Gault conforme RCM"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Metformina - Secção 4.2"
+      }
+    },
+    
+    "hepatic_impairment": {
+      "title": "Insuficiência Hepática",
+      "content": {
+        "contraindication": "Contraindicado se hipoxia tecidular provável",
+        "mechanism": "Redução clearance lactato → risco acidose láctica",
+        "assessment": "Avaliar função hepática antes início",
+        "monitoring": "Vigilância sintomas acidose láctica"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Metformina - Secção 4.3"
+      }
+    },
+    
+    "monitoring": {
+      "title": "Monitorização",
+      "content": {
+        "baseline": [
+          "Função renal (creatinina, TFG)",
+          "Hemograma completo",
+          "HbA1c ou glicemia jejum",
+          "Função hepática",
+          "Vitamina B12 (se fatores risco deficiência)"
+        ],
+        "ongoing": [
+          {
+            "parameter": "Função renal",
+            "frequency": "Anualmente; 2x/ano se >65 anos ou fatores risco deterioração",
+            "action": "Suspender se TFG <30 mL/min/1,73m²"
+          },
+          {
+            "parameter": "HbA1c",
+            "frequency": "Cada 3-6 meses",
+            "target": "<7% (individualizar conforme doente)"
+          },
+          {
+            "parameter": "Vitamina B12",
+            "frequency": "Se sintomas suspeitos ou fatores risco",
+            "groups_at_risk": "Idosos, vegetarianos, malabsorção, uso prolongado"
+          },
+          {
+            "parameter": "Sintomas acidose láctica",
+            "frequency": "Continuamente",
+            "red_flags": "Náuseas, vómitos, dor abdominal, dispneia, hipotermia, astenia"
+          }
+        ],
+        "diabetes_monitoring": {
+          "glycemic_control": "HbA1c <7% (ajustar individualmente)",
+          "additional": "Pressão arterial, perfil lipídico, peso corporal",
+          "complications": "Rastreio retinopatia, nefropatia, neuropatia"
+        }
+      },
+      "source": {
+        "type": "Guidelines",
+        "reference": "Guidelines ADA/EASD - Diabetes Mellitus Tipo 2"
+      }
+    },
+    
+    "administration": {
+      "title": "Administração",
+      "content": {
+        "immediate_release": {
+          "timing": "Com ou após refeições (reduz efeitos GI)",
+          "frequency": "1-3 vezes por dia",
+          "titration": "Aumento gradual semanal",
+          "swallowing": "Engolir inteiros com água"
+        },
+        "modified_release": {
+          "timing": "Com jantar (dose única) ou com refeições (doses divididas)",
+          "swallowing": "Engolir inteiros, NÃO mastigar nem partir",
+          "notes": "Comprimidos fantasma podem aparecer fezes (normal)"
+        },
+        "general_advice": {
+          "food": "Sempre com alimentos para reduzir efeitos GI",
+          "hydration": "Manter hidratação adequada",
+          "alcohol": "Evitar consumo excessivo álcool"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Metformina - Secção 4.2"
+      }
+    },
+    
+    "forms": {
+      "title": "Formas Farmacêuticas",
+      "content": [
+        {
+          "form": "Comprimidos revestidos (libertação imediata)",
+          "strengths": ["500 mg", "850 mg", "1000 mg"],
+          "pack_sizes": ["30 comp", "60 comp", "90 comp"]
+        },
+        {
+          "form": "Comprimidos libertação prolongada",
+          "strengths": ["500 mg", "750 mg", "1000 mg"],
+          "pack_sizes": ["30 comp", "60 comp"],
+          "notes": "Não partir nem mastigar"
+        },
+        {
+          "form": "Solução oral",
+          "strengths": ["500 mg/5 mL"],
+          "pack_sizes": ["150 mL"],
+          "notes": "Agitar antes usar, medir com seringa"
+        },
+        {
+          "form": "Pó para solução oral",
+          "strengths": ["500 mg/saqueta", "1000 mg/saqueta"],
+          "pack_sizes": ["30 saquetas"],
+          "notes": "Dissolver em água antes tomar"
+        }
+      ],
+      "source": {
+        "type": "Infomed",
+        "reference": "Base de dados do Infarmed"
+      }
+    }
+  },
+  
+  "calculators": [
+    {
+      "id": "renal_dosing",
+      "name": "Ajuste Renal Metformina",
+      "type": "renal_adjustment",
+      "applicable": true,
+      "description": "Determinar dose segura baseada na função renal",
+      "parameters": {
+        "gfr_ranges": {
+          "≥60": "Dose normal",
+          "45-59": "Dose normal, monitorizar 3-6 meses",
+          "30-44": "Considerar redução 50%, monitorizar 3 meses",
+          "<30": "CONTRAINDICADO"
+        }
+      }
+    },
+    {
+      "id": "b12_risk_assessment",
+      "name": "Avaliação Risco Deficiência B12",
+      "type": "risk_calculator",
+      "applicable": true,
+      "description": "Identificar doentes em risco deficiência B12",
+      "risk_factors": [
+        "Idade >65 anos",
+        "Dose metformina >1000 mg/dia",
+        "Duração tratamento >2 anos",
+        "Dieta vegetariana/vegana",
+        "Malabsorção intestinal",
+        "Gastrectomia prévia",
+        "Uso IBP concomitante"
+      ],
+      "recommendation": "≥3 fatores: doseamento anual B12"
+    }
+  ],
+  
+  "alerts": [
+    {
+      "type": "renal",
+      "condition": "TFG_menor_30",
+      "message": "CONTRAINDICADO - risco acidose láctica fatal. Suspender imediatamente"
+    },
+    {
+      "type": "lactic_acidosis",
+      "condition": "sintomas_inespecificos",
+      "message": "Suspeitar acidose láctica: náuseas, vómitos, dor abdominal, dispneia, astenia"
+    },
+    {
+      "type": "contrast",
+      "condition": "contraste_iodado",
+      "message": "Suspender 48h antes e após contraste. Confirmar função renal normal antes reintroduzir"
+    },
+    {
+      "type": "b12_deficiency",
+      "condition": "uso_prolongado",
+      "message": "Monitorizar B12 - deficiência comum especialmente idosos e doses altas"
+    },
+    {
+      "type": "surgery",
+      "condition": "cirurgia_anestesia",
+      "message": "Suspender temporariamente - risco hipoxia e acidose láctica"
+    },
+    {
+      "type": "gi_effects",
+      "condition": "inicio_tratamento",
+      "message": "Efeitos GI comuns início. Tomar com refeições, aumentar dose gradualmente"
+    }
+  ],
+  
+  "clinical_pearls": [
+    "Primeira linha diabetes tipo 2 (monoterapia)",
+    "Não causa hipoglicemia quando usada isoladamente",
+    "Efeito neutro ou ligeira perda peso",
+    "Melhoria perfil lipídico (redução LDL)",
+    "Suspender 48h antes/após contraste iodado",
+    "Deficiência B12 subdiagnosticada (novo alerta 2022)",
+    "Formulação libertação prolongada melhor tolerância GI",
+    "Segura na gravidez se clinicamente indicado",
+    "Combinação com insulina eficaz no DM1 obeso",
+    "SOP: melhoria resistência insulina e ovulação",
+    "Acidose láctica rara mas mortalidade ~50%",
+    "Função renal normal obrigatória para segurança"
+  ],
+  
+  "references": [
+    {
+      "type": "primary",
+      "source": "RCM Metformina",
+      "url": "https://extranet.infarmed.pt/",
+      "date_accessed": "2025-01-01"
+    },
+    {
+      "type": "safety_alert",
+      "source": "Infarmed - Alerta Deficiência B12",
+      "year": 2022
+    },
+    {
+      "type": "safety_alert", 
+      "source": "Infarmed - Metformina na Gravidez",
+      "year": 2022
+    },
+    {
+      "type": "guideline",
+      "source": "Guidelines ADA/EASD - Diabetes Tipo 2",
+      "year": 2022
+    },
+    {
+      "type": "guideline",
+      "source": "Norma DGS 052/2011 - Diabetes Mellitus Tipo 2",
+      "year": 2011
+    }
+  ]
+}

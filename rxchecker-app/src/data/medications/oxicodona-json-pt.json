@@ -1,0 +1,659 @@
+{
+  "id": "oxicodona",
+  "name": "Oxicodona",
+  "generic_name": "cloridrato de oxicodona",
+  "brand_names": ["OxyContin", "Oxynorm", "Longtec", "Oxicodona Generis"],
+  "atc_code": "N02AA05",
+  "therapeutic_class": "Analgésico opioide - Agonista μ (mu)",
+  "prescription_status": "MSRM - Estupefaciente",
+  "controlled_substance": "Tabela I-A - Decreto-Lei n.º 15/93",
+  "last_updated": "2025-01-01",
+  
+  "drug_action": {
+    "title": "Mecanismo de Ação",
+    "content": "A oxicodona é um analgésico opioide semi-sintético que atua principalmente como agonista dos recetores μ-opioides (mu), produzindo analgesia, sedação e depressão respiratória. Tem também atividade nos recetores κ (kappa) e δ (delta).",
+    "pharmacokinetics": {
+      "bioavailability": "60-87% (oral)",
+      "onset_immediate": "10-15 minutos",
+      "onset_modified": "1 hora",
+      "peak_effect": "1-2 horas (imediata), 3 horas (prolongada)",
+      "half_life": "3-5 horas",
+      "metabolism": "Hepático (CYP3A4, CYP2D6)",
+      "elimination": "Renal (≥90%)",
+      "active_metabolites": "Oxymorfona (menor atividade)"
+    },
+    "source": {
+      "type": "RCM",
+      "reference": "RCM Oxicodona - Secção 5.2"
+    }
+  },
+  
+  "sections": {
+    "indications": {
+      "title": "Indicações e Posologia",
+      "content": {
+        "primary_indications": [
+          "Dor moderada a grave em adultos",
+          "Dor crónica grave (formulações libertação prolongada)",
+          "Dor oncológica",
+          "Dor pós-operatória (apenas libertação imediata após alerta 2025)"
+        ],
+        "contraindicated_uses": [
+          "Dor pós-operatória (formulações libertação prolongada) - removido 2025",
+          "Dor aguda ligeira",
+          "Dor não-opioide responsiva"
+        ],
+        "dosage": [
+          {
+            "indication": "Dor aguda moderada-grave",
+            "formulation": "Libertação imediata",
+            "population": "Adulto naive opioides",
+            "initial_dose": "5 mg cada 4-6 horas",
+            "titration": "Aumentar 25-50% conforme necessário",
+            "typical_range": "5-15 mg cada 4-6 horas",
+            "notes": "Sempre começar dose mais baixa"
+          },
+          {
+            "indication": "Dor crónica grave",
+            "formulation": "Libertação prolongada 12h",
+            "conversion_from_immediate": "Dose total diária dividida por 2 (12/12h)",
+            "initial_dose": "10 mg cada 12 horas",
+            "titration": "Aumentar cada 1-2 dias conforme necessário",
+            "typical_range": "20-80 mg cada 12 horas",
+            "maximum": "Sem limite definido (individualizar)"
+          },
+          {
+            "indication": "Dor crónica grave",
+            "formulation": "Libertação prolongada 24h (Onexila XL)",
+            "initial_dose": "10 mg uma vez por dia",
+            "conversion": "Dose total diária libertação imediata = dose única diária",
+            "titration": "Aumentar cada 1-2 dias",
+            "notes": "Formulação específica - não trocar com outras"
+          },
+          {
+            "indication": "Conversão outros opioides",
+            "method": "Usar tabela equivalências",
+            "reduction": "Reduzir 25-50% dose equianalgesica inicial (tolerância cruzada incompleta)",
+            "examples": [
+              "Morfina oral → Oxicodona: rácio 2:1",
+              "Tramadol → Oxicodona: rácio 10:1",
+              "Codeína → Oxicodona: rácio 15:1"
+            ]
+          },
+          {
+            "indication": "Dor oncológica/cuidados paliativos",
+            "approach": "Titulação individualizada sem limite superior",
+            "breakthrough": "10-15% dose total diária como dose resgate",
+            "frequency_rescue": "Cada 1 hora se necessário",
+            "notes": "Objetivos comfort vs side effects"
+          }
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Oxicodona - Secção 4.2"
+      }
+    },
+    
+    "safety_warnings": {
+      "title": "Informações Importantes de Segurança",
+      "content": {
+        "respiratory_depression": {
+          "warning": "Risk of potentially fatal respiratory depression",
+          "high_risk_groups": [
+            "Idosos",
+            "Doentes débeis",
+            "Doença respiratória preexistente",
+            "Uso concomitante benzodiazepinas/depressores SNC",
+            "Conversão entre opioides"
+          ],
+          "precautions": "Monitorização respiratória especialmente primeiras 24-72h"
+        },
+        "dependence_addiction": {
+          "warning": "Risco dependência e adição mesmo doses terapêuticas",
+          "risk_factors": [
+            "História abuso substâncias",
+            "Perturbações saúde mental",
+            "Uso prolongado (>3 meses)",
+            "Doses elevadas"
+          ],
+          "counseling_points": [
+            "Discutir riscos antes início",
+            "Acordar estratégia tratamento e fim",
+            "Sinais sobredosagem",
+            "Armazenamento seguro"
+          ]
+        },
+        "postoperative_restriction": {
+          "new_restriction_2025": "Formulações libertação prolongada removidas indicação dor pós-operatória",
+          "risks": [
+            "Uso persistente pós-operatório opioides (PPOU)",
+            "Compromisso ventilatório induzido opioides (OIVI)",
+            "Depressão respiratória",
+            "Sedação, obstrução via aérea superior"
+          ],
+          "recommendations": [
+            "Discutir riscos PPOU e dependência antes cirurgia",
+            "Usar apenas opioides libertação imediata pós-operatório",
+            "Prescrever quantidade mínima necessária na alta",
+            "Analgesia multimodal"
+          ]
+        },
+        "hyperalgesia": {
+          "warning": "Hiperalgesia induzida opioides em uso prolongado",
+          "presentation": "Aumento sensibilidade dor paradoxal",
+          "management": "Considerar redução gradual dose vs rotação opioide"
+        }
+      },
+      "source": {
+        "type": "Alerta regulamentar",
+        "reference": "Infarmed - Alerta Opioides Libertação Prolongada 2025"
+      }
+    },
+    
+    "contraindications": {
+      "title": "Contraindicações",
+      "content": [
+        "Depressão respiratória aguda",
+        "Doentes em coma",
+        "Traumatismo craniano (interfere resposta pupilar)",
+        "Pressão intracraniana aumentada",
+        "Risco íleo paralítico",
+        "Abdómen agudo",
+        "Obstipação crónica",
+        "Cor pulmonale",
+        "Atraso esvaziamento gástrico",
+        "Hipersensibilidade oxicodona ou opioides",
+        "Uso concomitante inibidores MAO (ou <14 dias suspensão)"
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Oxicodona - Secção 4.3"
+      }
+    },
+    
+    "cautions": {
+      "title": "Precauções",
+      "content": [
+        "Insuficiência adrenocortical (reduzir dose)",
+        "Asma (evitar durante crise aguda)",
+        "Apneia central do sono",
+        "Distúrbios convulsivos",
+        "Perturbações saúde mental atuais/história",
+        "História abuso substâncias",
+        "Doentes debilitados (reduzir dose)",
+        "Doenças trato biliar",
+        "Idosos (reduzir dose)",
+        "Hipotensão",
+        "Hipotiroidismo (reduzir dose)",
+        "Compromisso função respiratória",
+        "Doenças inflamatórias intestino",
+        "Miastenia gravis",
+        "Distúrbios obstrutivos intestino",
+        "Hipertrofia prostática",
+        "Choque",
+        "Estenose uretral"
+      ],
+      "elderly_stopp_criteria": {
+        "potentially_inappropriate": [
+          "Opioide forte como primeira linha dor ligeira (escada analgésica OMS não observada)",
+          "Uso regular sem laxante concomitante (risco obstipação grave)",
+          "Opioide libertação prolongada sem opioide imediata para dor breakthrough (risco persistência dor grave)"
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Oxicodona - Secção 4.4"
+      }
+    },
+    
+    "interactions": {
+      "title": "Interações Medicamentosas",
+      "content": [
+        {
+          "category": "Depressão SNC - CRÍTICA",
+          "drugs": [
+            {
+              "name": "Benzodiazepinas (lorazepam, diazepam, etc.)",
+              "effect": "Depressão respiratória potencialmente fatal",
+              "mechanism": "Efeitos depressores SNC aditivos",
+              "management": "Evitar. Se imprescindível: doses mínimas, monitorização apertada ≥2 semanas",
+              "special_note": "Metadona: efeito depressor pode ser retardado"
+            },
+            {
+              "name": "Álcool",
+              "effect": "Sedação excessiva, depressão respiratória",
+              "management": "Evitar completamente"
+            },
+            {
+              "name": "Outros opioides",
+              "effect": "Depressão respiratória aditiva",
+              "management": "Evitar duplicação, considerar rotação se necessário"
+            }
+          ]
+        },
+        {
+          "category": "Metabolismo CYP3A4",
+          "drugs": [
+            {
+              "name": "Inibidores CYP3A4 fortes (ketoconazol, ritonavir)",
+              "effect": "Aumento níveis oxicodona",
+              "management": "Reduzir dose oxicodona, monitorizar toxicidade"
+            },
+            {
+              "name": "Indutores CYP3A4 (rifampicina, carbamazepina)",
+              "effect": "Redução níveis oxicodona",
+              "management": "Pode necessitar aumento dose"
+            }
+          ]
+        },
+        {
+          "category": "Metabolismo CYP2D6",
+          "drugs": [
+            {
+              "name": "Inibidores CYP2D6 (paroxetina, fluoxetina)",
+              "effect": "Redução conversão oxymorfona (metabolito ativo)",
+              "management": "Pode afetar eficácia, ajustar dose conforme resposta"
+            }
+          ]
+        },
+        {
+          "category": "Efeitos Serotoninérgicos",
+          "drugs": [
+            {
+              "name": "ISRSs, ISRSNs, triptanos",
+              "effect": "Risco síndrome serotoninérgica",
+              "management": "Monitorizar sintomas: agitação, hipertermia, rigidez"
+            }
+          ]
+        },
+        {
+          "category": "Outros",
+          "drugs": [
+            {
+              "name": "Relaxantes musculares",
+              "effect": "Depressão respiratória aditiva",
+              "management": "Usar com precaução"
+            },
+            {
+              "name": "Diuréticos",
+              "effect": "Potenciação hipotensão",
+              "management": "Monitorizar pressão arterial"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Oxicodona - Secção 4.5"
+      }
+    },
+    
+    "side_effects": {
+      "title": "Efeitos Adversos",
+      "content": {
+        "very_common": [
+          "Obstipação (>10% - quase universal)",
+          "Náuseas, vómitos",
+          "Sonolência, tonturas",
+          "Prurido"
+        ],
+        "common": [
+          "Perda apetite",
+          "Ansiedade, confusão",
+          "Depressão, insónia",
+          "Cefaleias",
+          "Tremor",
+          "Broncoespasmo",
+          "Dispneia",
+          "Dor abdominal, boca seca",
+          "Diarreia",
+          "Soluços",
+          "Alterações humor",
+          "Sudorese",
+          "Reações cutâneas"
+        ],
+        "serious": [
+          "Depressão respiratória (potencialmente fatal)",
+          "Síndrome abstinência",
+          "Dependência física/psicológica",
+          "Hiperalgesia",
+          "Síndrome serotoninérgica",
+          "Insuficiência adrenal",
+          "Diminuição hormonas sexuais"
+        ],
+        "long_term_effects": [
+          "Tolerância (necessidade doses crescentes)",
+          "Hipogonadismo",
+          "Imunosupressão",
+          "Hiperalgesia",
+          "Alterações cognitivas"
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Oxicodona - Secção 4.8"
+      }
+    },
+    
+    "special_populations": {
+      "title": "Populações Especiais",
+      "content": {
+        "pregnancy": {
+          "category": "Evitar se possível",
+          "risks": [
+            "Depressão respiratória neonatal",
+            "Síndrome abstinência neonatal",
+            "Estase gástrica e pneumonia aspiração materna (durante parto)"
+          ],
+          "labor": "Se usado durante parto, ter naloxona disponível"
+        },
+        "lactation": {
+          "safety": "Evitar",
+          "description": "Presente no leite materno",
+          "risk": "Sedação e depressão respiratória no lactente"
+        },
+        "pediatric": {
+          "restriction": "Não recomendado <18 anos",
+          "safety": "Dados limitados segurança/eficácia",
+          "risk": "Maior sensibilidade depressão respiratória"
+        },
+        "elderly": {
+          "considerations": [
+            "Iniciar doses menores (redução 50%)",
+            "Maior risco efeitos adversos",
+            "Clearance reduzida",
+            "Maior sensibilidade depressão respiratória",
+            "Risco quedas aumentado",
+            "Função renal frequentemente diminuída"
+          ],
+          "typical_start": "2,5-5 mg cada 6 horas (libertação imediata)"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Oxicodona - Secção 4.6"
+      }
+    },
+    
+    "hepatic_impairment": {
+      "title": "Insuficiência Hepática",
+      "content": {
+        "mild": "Precaução, redução inicial dose 50%",
+        "moderate_severe": "Evitar",
+        "mechanism": "Metabolismo hepático extenso (CYP3A4, CYP2D6)",
+        "monitoring": "Sinais toxicidade, ajustar conforme resposta",
+        "child_pugh_c": "Contraindicado"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Oxicodona - Secção 4.2"
+      }
+    },
+    
+    "renal_impairment": {
+      "title": "Insuficiência Renal",
+      "content": {
+        "mild": "TFG 50-80 mL/min: Precaução",
+        "moderate": "TFG 30-50 mL/min: Redução dose 50%",
+        "severe": "TFG <30 mL/min: Redução dose 50%, considerar intervalos prolongados",
+        "dialysis": "Suplementar após sessão hemodiálise",
+        "mechanism": "90% eliminação renal",
+        "monitoring": "Sinais acumulação, especialmente sedação"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Oxicodona - Secção 4.2"
+      }
+    },
+    
+    "withdrawal": {
+      "title": "Síndrome de Abstinência",
+      "content": {
+        "risk_factors": [
+          "Uso regular >1-2 semanas",
+          "Doses elevadas",
+          "Suspensão abrupta"
+        ],
+        "symptoms": {
+          "early": [
+            "Ansiedade, agitação",
+            "Dores musculares",
+            "Lacrimejo, rinorreia",
+            "Insónia"
+          ],
+          "peak": [
+            "Náuseas, vómitos, diarreia",
+            "Cãibras abdominais",
+            "Midríase",
+            "Piloereção",
+            "Taquicardia, hipertensão"
+          ]
+        },
+        "timeline": {
+          "onset": "6-12 horas após última dose",
+          "peak": "1-3 dias",
+          "duration": "7-14 dias (sintomas ligeiros podem persistir semanas)"
+        },
+        "tapering_schedule": {
+          "general": "Redução 10-25% dose cada 1-2 semanas",
+          "high_dose": "Redução mais lenta (5-10%)",
+          "switch_option": "Considerar morfina libertação imediata (conversão mais flexível)"
+        }
+      },
+      "source": {
+        "type": "Guidelines",
+        "reference": "Faculty of Pain Medicine - Opioid Withdrawal"
+      }
+    },
+    
+    "overdose": {
+      "title": "Sobredosagem",
+      "content": {
+        "triad": [
+          "Coma",
+          "Depressão respiratória",
+          "Miose (pupilas puntiformes)"
+        ],
+        "additional_signs": [
+          "Cianose",
+          "Pulso fraco",
+          "Hipotensão",
+          "Hipotermia",
+          "Edema pulmonar"
+        ],
+        "antidote": {
+          "drug": "Naloxona",
+          "dose": "0,4-2 mg IV, repetir 2-3 min PRN",
+          "duration": "Meia-vida curta - repetir conforme necessário",
+          "monitoring": "Pode precipitar síndrome abstinência"
+        },
+        "supportive_care": [
+          "Via aérea permeável",
+          "Ventilação assistida se necessário",
+          "Fluidos IV",
+          "Suporte hemodinâmico"
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Oxicodona - Secção 4.9"
+      }
+    },
+    
+    "forms": {
+      "title": "Formas Farmacêuticas",
+      "content": [
+        {
+          "form": "Comprimidos libertação imediata",
+          "strengths": ["5 mg", "10 mg", "20 mg"],
+          "pack_sizes": ["28 comp", "56 comp"],
+          "notes": "Para dor aguda e breakthrough"
+        },
+        {
+          "form": "Comprimidos libertação prolongada 12h",
+          "brands": ["OxyContin", "Longtec", "Oxeltra"],
+          "strengths": ["5 mg", "10 mg", "15 mg", "20 mg", "30 mg", "40 mg", "80 mg"],
+          "pack_sizes": ["28 comp", "56 comp"],
+          "notes": "NÃO partir, mastigar ou esmagar"
+        },
+        {
+          "form": "Comprimidos libertação prolongada 24h",
+          "brands": ["Onexila XL"],
+          "strengths": ["5 mg", "10 mg", "15 mg", "20 mg", "30 mg", "40 mg"],
+          "pack_sizes": ["28 comp"],
+          "notes": "Formulação específica - não intercambiar"
+        },
+        {
+          "form": "Cápsulas",
+          "strengths": ["5 mg", "10 mg", "20 mg"],
+          "notes": "Podem ser abertas e misturadas com alimentos moles"
+        },
+        {
+          "form": "Solução oral",
+          "strengths": ["5 mg/5 mL", "10 mg/mL"],
+          "pack_sizes": ["250 mL"],
+          "notes": "Usar seringa graduada fornecida"
+        },
+        {
+          "form": "Solução injetável",
+          "strengths": ["10 mg/mL", "50 mg/mL"],
+          "pack_sizes": ["1 mL", "2 mL"],
+          "notes": "Uso hospitalar, diluir para perfusão"
+        }
+      ],
+      "source": {
+        "type": "Infomed",
+        "reference": "Base de dados do Infarmed"
+      }
+    }
+  },
+  
+  "calculators": [
+    {
+      "id": "opioid_equivalence",
+      "name": "Equivalências de Opioides",
+      "type": "conversion",
+      "applicable": true,
+      "description": "Conversão entre diferentes opioides",
+      "reference_drug": "morfina oral",
+      "equivalences": {
+        "morfina_oral": { "factor": 1, "notes": "Referência padrão" },
+        "oxicodona_oral": { "factor": 0.5, "notes": "Oxicodona 2x mais potente" },
+        "morfina_iv": { "factor": 0.33, "notes": "3x mais potente que oral" },
+        "fentanil_transdermico": { "factor": 0.012, "notes": "mcg/h ÷ 2 = mg morfina/dia" },
+        "tramadol": { "factor": 5, "notes": "5x menos potente" },
+        "codeina": { "factor": 8, "notes": "8x menos potente" },
+        "tapentadol": { "factor": 2.5, "notes": "2.5x menos potente" },
+        "buprenorfina_td": { "factor": 0.075, "notes": "mcg/h × 1.33 = mg morfina/dia" }
+      },
+      "conversion_rules": [
+        "Reduzir 25-50% dose equianalgésica (tolerância cruzada incompleta)",
+        "Aumentar gradualmente conforme resposta",
+        "Considerar função renal/hepática",
+        "Manter opioide breakthrough durante conversão"
+      ]
+    },
+    {
+      "id": "breakthrough_dose",
+      "name": "Dose Breakthrough",
+      "type": "breakthrough_calculation",
+      "applicable": true,
+      "description": "Calcular dose resgate para dor breakthrough",
+      "formula": "10-15% da dose total diária",
+      "example": "Doente com 60 mg/dia: breakthrough = 6-9 mg cada 1-2h PRN",
+      "frequency": "Máximo cada 1 hora se necessário",
+      "adjustment": "Se >4 resgates/dia: aumentar dose basal"
+    },
+    {
+      "id": "pediatric_morphine_equivalent",
+      "name": "Equivalente Morfina Pediátrico",
+      "type": "pediatric_conversion",
+      "applicable": false,
+      "description": "Oxicodona não recomendada <18 anos",
+      "alternative": "Considerar morfina: 0,2-0,5 mg/kg cada 4-6h"
+    }
+  ],
+  
+  "alerts": [
+    {
+      "type": "respiratory",
+      "condition": "uso_benzodiazepinas",
+      "message": "ALERTA CRÍTICO: Risco depressão respiratória fatal - evitar co-prescrição"
+    },
+    {
+      "type": "formulation",
+      "condition": "libertacao_prolongada",
+      "message": "NÃO partir, mastigar ou esmagar - risco sobredosagem fatal"
+    },
+    {
+      "type": "postoperative",
+      "condition": "dor_pos_operatoria",
+      "message": "NOVA RESTRIÇÃO 2025: Apenas libertação imediata pós-operatório"
+    },
+    {
+      "type": "dependence",
+      "condition": "uso_prolongado",
+      "message": "Risco dependência mesmo doses terapêuticas - discutir estratégia fim tratamento"
+    },
+    {
+      "type": "hepatic",
+      "condition": "insuficiencia_hepatica",
+      "message": "Reduzir dose 50% (ligeira) ou evitar (moderada-grave)"
+    },
+    {
+      "type": "renal",
+      "condition": "TFG_menor_50",
+      "message": "Reduzir dose 50% e ajustar intervalo - 90% eliminação renal"
+    },
+    {
+      "type": "constipation",
+      "condition": "inicio_tratamento",
+      "message": "Prescrever laxante profilático - obstipação quase universal"
+    }
+  ],
+  
+  "clinical_pearls": [
+    "2x mais potente que morfina oral (rácio 2:1)",
+    "Excelente biodisponibilidade oral (60-87%)",
+    "Menos efeitos GI que morfina",
+    "Metabolismo CYP3A4/CYP2D6 - atenção interações",
+    "Libertação prolongada: 12h vs 24h (não intercambiar)",
+    "Obstipação quase universal - laxante obrigatório",
+    "Naloxona disponível como antídoto",
+    "Reduzir 25-50% dose na conversão (tolerância cruzada incompleta)",
+    "Breakthrough = 10-15% dose total diária",
+    "Descontinuação gradual obrigatória (redução 10-25%/semana)",
+    "Formulações LP removidas dor pós-operatória (2025)",
+    "Monitorização respiratória crítica primeiras 72h"
+  ],
+  
+  "references": [
+    {
+      "type": "primary",
+      "source": "RCM Oxicodona",
+      "url": "https://extranet.infarmed.pt/",
+      "date_accessed": "2025-01-01"
+    },
+    {
+      "type": "safety_alert",
+      "source": "Infarmed - Opioides Libertação Prolongada Pós-Operatório",
+      "year": 2025
+    },
+    {
+      "type": "safety_alert",
+      "source": "Infarmed - Opioides e Benzodiazepinas",
+      "year": 2020
+    },
+    {
+      "type": "guideline",
+      "source": "Faculty of Pain Medicine - Opioids Aware",
+      "url": "http://www.fpm.ac.uk/faculty-of-pain-medicine/opioids-aware"
+    },
+    {
+      "type": "palliative",
+      "source": "Palliative Care Formulary - Oxicodona",
+      "url": "https://www.medicinescomplete.com/#/content/palliative/oxycodone"
+    }
+  ]
+}

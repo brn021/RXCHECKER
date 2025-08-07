@@ -1,0 +1,399 @@
+{
+  "id": "apixabano",
+  "name": "Apixabano",
+  "generic_name": "apixabano",
+  "brand_names": ["Eliquis"],
+  "atc_code": "B01AF02",
+  "therapeutic_class": "Anticoagulante oral - Inibidor direto do Factor Xa",
+  "prescription_status": "MSRM",
+  "last_updated": "2025-01-01",
+  
+  "drug_action": {
+    "title": "Mecanismo de Ação",
+    "content": "O apixabano é um inibidor direto do factor X ativado (factor Xa), altamente seletivo e reversível.",
+    "source": {
+      "type": "RCM",
+      "reference": "RCM Apixabano - Secção 5.1"
+    }
+  },
+  
+  "sections": {
+    "indications": {
+      "title": "Indicações e Posologia",
+      "content": {
+        "primary_indications": [
+          "Profilaxia do tromboembolismo venoso após cirurgia de substituição da anca ou joelho",
+          "Tratamento da trombose venosa profunda e embolia pulmonar",
+          "Prevenção da recorrência de TVP e EP",
+          "Prevenção do AVC e embolia sistémica na fibrilhação auricular não valvular"
+        ],
+        "dosage": [
+          {
+            "indication": "Profilaxia TVE - cirurgia joelho",
+            "population": "Adulto",
+            "dose": "2,5 mg duas vezes por dia",
+            "duration": "10-14 dias",
+            "timing": "Iniciar 12-24 horas após cirurgia"
+          },
+          {
+            "indication": "Profilaxia TVE - cirurgia anca",
+            "population": "Adulto",
+            "dose": "2,5 mg duas vezes por dia",
+            "duration": "32-38 dias",
+            "timing": "Iniciar 12-24 horas após cirurgia"
+          },
+          {
+            "indication": "Tratamento TVP/EP",
+            "population": "Adulto",
+            "dose": "Inicial: 10 mg duas vezes por dia durante 7 dias, depois 5 mg duas vezes por dia",
+            "notes": "Manutenção prolongada conforme avaliação risco-benefício"
+          },
+          {
+            "indication": "Prevenção recorrência TVP/EP",
+            "population": "Adulto",
+            "dose": "2,5 mg duas vezes por dia",
+            "notes": "Após completar 6 meses de anticoagulação"
+          },
+          {
+            "indication": "Fibrilhação auricular não valvular",
+            "population": "Adulto 18-79 anos",
+            "dose": "5 mg duas vezes por dia"
+          },
+          {
+            "indication": "Fibrilhação auricular não valvular",
+            "population": "Adulto ≥80 anos (peso ≤60 kg)",
+            "dose": "2,5 mg duas vezes por dia"
+          },
+          {
+            "indication": "Fibrilhação auricular não valvular",
+            "population": "Adulto ≥80 anos (peso >60 kg)",
+            "dose": "5 mg duas vezes por dia"
+          }
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Apixabano - Secção 4.2"
+      }
+    },
+    
+    "contraindications": {
+      "title": "Contraindicações",
+      "content": [
+        "Hemorragia ativa clinicamente significativa",
+        "Síndrome antifosfolipídico (risco aumentado de eventos trombóticos recorrentes)",
+        "Prótese valvular cardíaca (eficácia não estabelecida)",
+        "Risco significativo de hemorragia major",
+        "Uso concomitante com qualquer outro anticoagulante"
+      ],
+      "additional_info": {
+        "major_bleeding_risk": "Evitar em condições com fatores de risco significativo para hemorragia major, incluindo ulceração gastrointestinal atual ou recente, neoplasias malignas com alto risco de hemorragia, lesão cerebral ou espinal recente, cirurgia cerebral, espinal ou oftálmica recente, hemorragia intracraniana recente, varizes esofágicas conhecidas ou suspeitas, malformações arteriovenosas, aneurismas vasculares ou anormalidades vasculares intraspinais ou intracerebrais major."
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Apixabano - Secção 4.3"
+      }
+    },
+    
+    "cautions": {
+      "title": "Precauções",
+      "content": [
+        "Anestesia com cateter epidural pós-operatório (risco de paralisia - aguardar 20-30 horas após dose de apixabano antes de remover cateter)",
+        "Idosos - risco aumentado de hemorragia",
+        "Baixo peso corporal",
+        "Risco de hemorragia",
+        "Insuficiência renal (TFG 15-29 mL/min) - usar com precaução",
+        "Insuficiência hepática ligeira a moderada - usar com precaução"
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Apixabano - Secção 4.4"
+      }
+    },
+    
+    "interactions": {
+      "title": "Interações Medicamentosas",
+      "content": [
+        {
+          "category": "Contraindicadas",
+          "drugs": [
+            {
+              "name": "Outros anticoagulantes",
+              "effect": "Risco aumentado de hemorragia",
+              "management": "Contraindicado exceto quando se muda terapêutica"
+            }
+          ]
+        },
+        {
+          "category": "Precaução Necessária - Inibidores CYP3A4 e P-gp",
+          "drugs": [
+            {
+              "name": "Cetoconazol, itraconazol, ritonavir, claritromicina",
+              "effect": "Aumento dos níveis de apixabano",
+              "management": "Evitar uso concomitante ou reduzir dose"
+            }
+          ]
+        },
+        {
+          "category": "Precaução Necessária - Indutores CYP3A4 e P-gp",
+          "drugs": [
+            {
+              "name": "Rifampicina, fenitoína, carbamazepina, fenobarbital, hipericão",
+              "effect": "Redução dos níveis de apixabano",
+              "management": "Evitar uso concomitante"
+            }
+          ]
+        },
+        {
+          "category": "Risco de Hemorragia",
+          "drugs": [
+            {
+              "name": "AINEs, aspirina, outros antiplaquetários",
+              "effect": "Risco aumentado de hemorragia",
+              "management": "Usar com precaução, monitorizar sinais de hemorragia"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Apixabano - Secção 4.5"
+      }
+    },
+    
+    "side_effects": {
+      "title": "Efeitos Adversos",
+      "content": {
+        "common": [
+          "Anemia",
+          "Hemorragia (incluindo equimoses, epistaxe, hematúria)",
+          "Náuseas",
+          "Reações cutâneas"
+        ],
+        "uncommon": [
+          "Hemorragia do SNC",
+          "Hipotensão",
+          "Hematoma pós-procedimento",
+          "Trombocitopenia",
+          "Complicações da ferida"
+        ],
+        "serious": [
+          "Hemorragia major (potencialmente fatal)",
+          "Hemorragia intracraniana",
+          "Hemorragia gastrointestinal",
+          "Hemorragia retroperitoneal"
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Apixabano - Secção 4.8"
+      }
+    },
+    
+    "special_populations": {
+      "title": "Populações Especiais",
+      "content": {
+        "pregnancy": {
+          "category": "Não recomendado",
+          "description": "Evitar na gravidez - informação insuficiente disponível",
+          "notes": "Pode atravessar a placenta"
+        },
+        "lactation": {
+          "safety": "Evitar",
+          "description": "Presente no leite materno em estudos animais",
+          "notes": "Descontinuar amamentação ou medicamento"
+        },
+        "elderly": {
+          "considerations": [
+            "Maior risco de hemorragia",
+            "Considerar dose reduzida conforme critérios",
+            "Monitorização mais frequente",
+            "Avaliar função renal regularmente"
+          ]
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Apixabano - Secção 4.6"
+      }
+    },
+    
+    "hepatic_impairment": {
+      "title": "Insuficiência Hepática",
+      "content": {
+        "mild_moderate": "Usar com precaução se transaminases >2x LSN ou bilirrubina ≥1,5x LSN",
+        "severe": "Evitar na insuficiência hepática grave ou associada a coagulopatia e risco de hemorragia clinicamente relevante",
+        "child_pugh_c": "Contraindicado"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Apixabano - Secção 4.2"
+      }
+    },
+    
+    "renal_impairment": {
+      "title": "Insuficiência Renal",
+      "content": {
+        "mild": "TFG 50-80 mL/min: Sem ajuste necessário",
+        "moderate": "TFG 30-49 mL/min: Usar com precaução",
+        "severe": "TFG 15-29 mL/min: Usar com precaução e considerar redução de dose",
+        "end_stage": "TFG <15 mL/min: Evitar - informação insuficiente",
+        "adjustment_criteria": {
+          "fa_dose_reduction": "Reduzir para 2,5 mg 2x/dia se: creatinina sérica ≥133 μmol/L E idade ≥80 anos, OU creatinina sérica ≥133 μmol/L E peso ≤60 kg, OU TFG 15-29 mL/min"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Apixabano - Secção 4.2"
+      }
+    },
+    
+    "monitoring": {
+      "title": "Monitorização",
+      "content": {
+        "baseline": [
+          "Função renal (TFG)",
+          "Função hepática",
+          "Hemograma completo",
+          "Avaliação do risco hemorrágico"
+        ],
+        "ongoing": [
+          {
+            "parameter": "Sinais de hemorragia",
+            "frequency": "Continuamente",
+            "action": "Interromper se hemorragia grave"
+          },
+          {
+            "parameter": "Função renal",
+            "frequency": "Pelo menos anualmente ou mais frequentemente se deterioração suspeita",
+            "notes": "Especialmente importante em idosos"
+          },
+          {
+            "parameter": "Hemograma",
+            "frequency": "Conforme clinicamente indicado",
+            "alert": "Anemia pode indicar hemorragia oculta"
+          }
+        ],
+        "no_routine_monitoring": "Não é necessária monitorização rotineira da anticoagulação (INR não é confiável)"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Apixabano - Secção 4.4"
+      }
+    },
+    
+    "antidote": {
+      "title": "Reversão da Anticoagulação",
+      "content": {
+        "specific_antidote": "Andexaneto alfa (Ondexxya®) - antídoto específico disponível",
+        "monitoring_reversal": "Monitorizar efeitos de reversão usando parâmetros clínicos",
+        "non_specific_measures": [
+          "Carvão ativado (se ingestão recente)",
+          "Medidas de suporte (hemostasia mecânica)",
+          "Concentrados de complexo protrombínico (se necessário)"
+        ]
+      },
+      "source": {
+        "type": "Guidelines",
+        "reference": "Guidelines Portuguesas de Anticoagulação"
+      }
+    },
+    
+    "forms": {
+      "title": "Formas Farmacêuticas",
+      "content": [
+        {
+          "form": "Comprimidos revestidos por película",
+          "strengths": ["2,5 mg", "5 mg"],
+          "pack_sizes": ["20 comp", "60 comp", "168 comp"]
+        }
+      ],
+      "source": {
+        "type": "Infomed",
+        "reference": "Base de dados do Infarmed"
+      }
+    }
+  },
+  
+  "calculators": [
+    {
+      "id": "creatinine_clearance",
+      "name": "Clearance da Creatinina (Cockcroft-Gault)",
+      "type": "renal_function",
+      "applicable": true,
+      "description": "Calcular TFG para ajuste de dose na fibrilhação auricular",
+      "formula": "((140-idade) × peso × (0.85 se mulher)) / (72 × creatinina sérica)",
+      "units": {
+        "age": "anos",
+        "weight": "kg",
+        "creatinine": "mg/dL",
+        "result": "mL/min"
+      }
+    },
+    {
+      "id": "bleeding_risk",
+      "name": "Avaliação do Risco Hemorrágico",
+      "type": "risk_assessment",
+      "applicable": true,
+      "description": "Avaliação estruturada do risco de hemorragia",
+      "factors": [
+        "Idade >65 anos",
+        "Hemorragia prévia",
+        "Hipertensão não controlada",
+        "Anemia",
+        "Insuficiência renal/hepática",
+        "Uso concomitante de antiplaquetários"
+      ]
+    }
+  ],
+  
+  "alerts": [
+    {
+      "type": "renal",
+      "condition": "TFG 15-29 mL/min",
+      "message": "Considerar redução de dose para 2,5 mg 2x/dia na fibrilhação auricular"
+    },
+    {
+      "type": "age",
+      "condition": "≥80 anos + peso ≤60 kg",
+      "message": "Dose reduzida recomendada: 2,5 mg 2x/dia"
+    },
+    {
+      "type": "interaction",
+      "condition": "uso_cetoconazol",
+      "message": "Evitar uso concomitante - risco de sobredosagem"
+    },
+    {
+      "type": "bleeding",
+      "condition": "qualquer_hemorragia",
+      "message": "Interromper tratamento se hemorragia grave - considerar antídoto específico"
+    }
+  ],
+  
+  "clinical_pearls": [
+    "Não suspender abruptamente - risco de eventos trombóticos",
+    "Fornecer cartão de alerta ao doente",
+    "Educar sobre sinais de hemorragia",
+    "Ajustar dose baseado na fórmula de Cockcroft-Gault, não MDRD",
+    "Considerar gastroproteção em doentes de alto risco"
+  ],
+  
+  "references": [
+    {
+      "type": "primary",
+      "source": "RCM Eliquis (Apixabano)",
+      "url": "https://extranet.infarmed.pt/",
+      "date_accessed": "2025-01-01"
+    },
+    {
+      "type": "guideline",
+      "source": "Norma DGS 011/2013 - Anticoagulantes Orais",
+      "year": 2013
+    },
+    {
+      "type": "guideline", 
+      "source": "Guidelines ESC 2020 - Fibrilhação Auricular",
+      "year": 2020
+    }
+  ]
+}

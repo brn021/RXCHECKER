@@ -1,0 +1,93 @@
+{
+  "name": "arm-app",
+  "version": "1.0.0",
+  "description": "ARM - Apoio à Receita Médica - Clinical Decision Support Tool",
+  "main": "src/main.js",
+  "homepage": "./",
+  "author": "HealthTech Portugal",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm run react-dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-pack": "npm run build && electron-builder",
+    "build": "react-scripts build",
+    "react-dev": "react-scripts start",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "start": "npm run electron-dev",
+    "dist": "npm run build && electron-builder --publish=never",
+    "dist-all": "npm run build && electron-builder -mwl --publish=never"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.9.5",
+    "lucide-react": "^0.309.0",
+    "clsx": "^2.1.0",
+    "electron-is-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.2.0",
+    "electron": "^28.2.0",
+    "electron-builder": "^24.9.1",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "@tailwindcss/forms": "^0.5.7"
+  },
+  "build": {
+    "appId": "pt.healthtech.arm",
+    "productName": "ARM - Apoio à Receita Médica",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "build/**/*",
+      "src/main.js",
+      "src/preload.js",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.medical",
+      "icon": "src/assets/icon.icns"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "src/assets/icon.ico"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": ["x64"]
+        }
+      ],
+      "category": "Office",
+      "icon": "src/assets/icon.png"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

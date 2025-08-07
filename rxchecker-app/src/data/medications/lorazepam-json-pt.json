@@ -1,0 +1,620 @@
+{
+  "id": "lorazepam",
+  "name": "Lorazepam",
+  "generic_name": "lorazepam",
+  "brand_names": ["Lorenin", "Lorazepam Generis", "Ativan"],
+  "atc_code": "N05BA06",
+  "therapeutic_class": "Benzodiazepina - Ansiolítico, sedativo, anticonvulsivante",
+  "prescription_status": "MSRM - Substância psicotrópica",
+  "controlled_substance": "Tabela IV - Lei n.º 15/93",
+  "last_updated": "2025-01-01",
+  
+  "drug_action": {
+    "title": "Mecanismo de Ação",
+    "content": "O lorazepam é uma benzodiazepina que atua como agonista dos recetores GABA-A, potenciando a ação inibitória do GABA no sistema nervoso central, resultando em efeitos ansiolíticos, sedativos, anticonvulsivantes e relaxantes musculares.",
+    "pharmacokinetics": {
+      "onset_oral": "30-60 minutos",
+      "onset_iv": "1-5 minutos",
+      "peak_effect": "2 horas (oral)",
+      "half_life": "10-20 horas",
+      "metabolism": "Conjugação hepática (não CYP450)",
+      "elimination": "Renal (90%)"
+    },
+    "source": {
+      "type": "RCM",
+      "reference": "RCM Lorazepam - Secção 5.2"
+    }
+  },
+  
+  "sections": {
+    "indications": {
+      "title": "Indicações e Posologia",
+      "content": {
+        "primary_indications": [
+          "Ansiedade (tratamento de curta duração)",
+          "Insónia associada à ansiedade",
+          "Pré-medicação anestésica",
+          "Sedação consciente para procedimentos",
+          "Estado de mal epilético",
+          "Convulsões febris",
+          "Convulsões por intoxicação"
+        ],
+        "dosage": [
+          {
+            "indication": "Ansiedade",
+            "route": "Oral",
+            "population": "Adulto",
+            "dose": "1-4 mg/dia em doses divididas",
+            "typical_schedule": "0,5-1 mg 2-3 vezes por dia",
+            "max_duration": "4 semanas (incluindo redução gradual)"
+          },
+          {
+            "indication": "Ansiedade",
+            "route": "Oral", 
+            "population": "Idoso",
+            "dose": "0,5-2 mg/dia em doses divididas",
+            "notes": "Iniciar com dose mais baixa"
+          },
+          {
+            "indication": "Ansiedade (doentes debilitados)",
+            "route": "Oral",
+            "dose": "0,5-2 mg/dia em doses divididas",
+            "notes": "Maior sensibilidade aos efeitos"
+          },
+          {
+            "indication": "Insónia associada à ansiedade",
+            "route": "Oral",
+            "dose": "1-2 mg ao deitar",
+            "max_duration": "4 semanas (incluindo redução gradual)"
+          },
+          {
+            "indication": "Pré-medicação/Sedação consciente",
+            "route": "Oral",
+            "dose": "2-3 mg na noite anterior + 2-4 mg 1-2h antes procedimento"
+          },
+          {
+            "indication": "Pré-medicação/Sedação consciente",
+            "route": "IV lenta",
+            "dose": "50 mcg/kg (máx 4 mg)",
+            "timing": "30-45 minutos antes procedimento",
+            "infusion_rate": "Máximo 2 mg/min"
+          },
+          {
+            "indication": "Pré-medicação/Sedação consciente",
+            "route": "IM",
+            "dose": "50 mcg/kg (máx 4 mg)",
+            "timing": "60-90 minutos antes procedimento"
+          },
+          {
+            "indication": "Estado mal epilético/Convulsões agudas",
+            "route": "IV lenta",
+            "population": "Adulto",
+            "dose": "4 mg dose inicial, repetir 4 mg após 5-10 min se necessário",
+            "infusion_rate": "Máximo 2 mg/min",
+            "notes": "Máximo 8 mg em 12 horas"
+          },
+          {
+            "indication": "Estado mal epilético/Convulsões agudas",
+            "route": "IV lenta",
+            "population": "Criança 1m-11a",
+            "dose": "100 mcg/kg (máx 4 mg), repetir após 5-10 min se necessário",
+            "infusion_rate": "Máximo 50 mcg/kg em 3 min"
+          },
+          {
+            "indication": "Ataques de pânico agudo",
+            "route": "IV lenta",
+            "dose": "25-30 mcg/kg cada 6h PRN (usual 1,5-2,5 mg)",
+            "alternative": "IM se IV não possível"
+          }
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Lorazepam - Secção 4.2"
+      }
+    },
+    
+    "safety_warnings": {
+      "title": "Informações Importantes de Segurança",
+      "content": {
+        "respiratory_depression": {
+          "warning": "Risco de depressão respiratória potencialmente fatal",
+          "risk_factors": [
+            "Uso concomitante com opioides",
+            "Idosos",
+            "Doença respiratória preexistente",
+            "Doses elevadas",
+            "Administração IV rápida"
+          ],
+          "precautions": [
+            "Co-prescrever apenas se sem alternativa",
+            "Usar doses mínimas eficazes",
+            "Monitorizar depressão respiratória",
+            "Equipamento ressuscitação disponível (uso parentérico)"
+          ]
+        },
+        "dependence_addiction": {
+          "warning": "Risco de dependência física e psicológica",
+          "risk_factors": [
+            "Uso >2-4 semanas",
+            "Doses elevadas",
+            "História de abuso substâncias",
+            "Perturbações mentais"
+          ],
+          "withdrawal_syndrome": [
+            "Ansiedade rebound",
+            "Insónia, irritabilidade",
+            "Tremor, sudorese",
+            "Convulsões (casos graves)",
+            "Síndrome potencialmente fatal"
+          ],
+          "prevention": "Redução gradual obrigatória após >2 semanas uso"
+        },
+        "paradoxical_reactions": {
+          "warning": "Reações paradoxais possíveis",
+          "symptoms": [
+            "Agitação, agressividade",
+            "Hostilidade aumentada",
+            "Desinibição",
+            "Excitação"
+          ],
+          "populations_at_risk": "Crianças e idosos mais suscetíveis"
+        }
+      },
+      "source": {
+        "type": "Alerta regulamentar",
+        "reference": "Infarmed - Alerta Benzodiazepinas e Opioides 2020"
+      }
+    },
+    
+    "contraindications": {
+      "title": "Contraindicações",
+      "content": [
+        "Insuficiência pulmonar aguda",
+        "Fraqueza neuromuscular respiratória acentuada",
+        "Síndrome de apneia do sono",
+        "Miastenia gravis instável",
+        "Depressão do SNC",
+        "Compromisso das vias aéreas",
+        "Depressão respiratória",
+        "Glaucoma de ângulo estreito",
+        "Intoxicação alcoólica aguda",
+        "Psicose crónica (não usar isoladamente)",
+        "Depressão (não usar isoladamente)",
+        "Estados fóbicos ou obsessivo-compulsivos (não usar isoladamente)"
+      ],
+      "specific_contraindications": {
+        "neonatal": "Injeções com álcool benzílico em recém-nascidos",
+        "anesthesia": "Apenas por pessoal experiente com equipamento ressuscitação"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Lorazepam - Secção 4.3"
+      }
+    },
+    
+    "cautions": {
+      "title": "Precauções",
+      "content": [
+        "Evitar uso prolongado (risco dependência)",
+        "Doentes debilitados (reduzir dose)",
+        "Idosos (reduzir dose)",
+        "História de dependência álcool/drogas",
+        "Miastenia gravis",
+        "Doença respiratória",
+        "Distúrbios personalidade (grupo ansioso - pode aumentar risco dependência)",
+        "Insuficiência hepática (reduzir dose)",
+        "Insuficiência renal (precaução)",
+        "Administração parentérica (equipamento ressuscitação obrigatório)"
+      ],
+      "elderly_stopp_criteria": {
+        "potentially_inappropriate": [
+          "Duração ≥4 semanas (sem indicação longo prazo, risco eventos adversos)",
+          "Insuficiência respiratória aguda/crónica (risco exacerbação)",
+          "Doentes com risco quedas (sedação, redução sensório, compromete equilíbrio)"
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Lorazepam - Secção 4.4"
+      }
+    },
+    
+    "interactions": {
+      "title": "Interações Medicamentosas",
+      "content": [
+        {
+          "category": "Depressão SNC Aditiva - CRÍTICA",
+          "drugs": [
+            {
+              "name": "Opioides (morfina, fentanil, oxicodona, etc.)",
+              "effect": "Depressão respiratória potencialmente fatal",
+              "mechanism": "Efeitos depressores SNC aditivos",
+              "management": "Evitar. Se imprescindível: doses mínimas, monitorização apertada ≥2 semanas se metadona"
+            },
+            {
+              "name": "Álcool",
+              "effect": "Sedação excessiva, depressão respiratória",
+              "management": "Evitar completamente durante tratamento"
+            },
+            {
+              "name": "Outros hipnóticos/sedativos",
+              "effect": "Sedação excessiva",
+              "management": "Evitar ou reduzir doses de ambos"
+            }
+          ]
+        },
+        {
+          "category": "Inibição Metabólica",
+          "drugs": [
+            {
+              "name": "Probenecida",
+              "effect": "Prolongamento e intensificação efeitos lorazepam",
+              "mechanism": "Inibição conjugação glucurónica",
+              "management": "Reduzir dose lorazepam 50%"
+            }
+          ]
+        },
+        {
+          "category": "Efeitos Farmacológicos Aditivos",
+          "drugs": [
+            {
+              "name": "Relaxantes musculares",
+              "effect": "Potenciação relaxamento muscular",
+              "management": "Precaução, ajustar doses"
+            },
+            {
+              "name": "Anti-histamínicos sedativos",
+              "effect": "Sedação aumentada",
+              "management": "Evitar ou reduzir doses"
+            }
+          ]
+        },
+        {
+          "category": "Alteração Farmacocinética",
+          "drugs": [
+            {
+              "name": "Teofilina, aminofilina",
+              "effect": "Possível redução efeito sedativo lorazepam",
+              "mechanism": "Antagonismo funcional",
+              "management": "Monitorizar eficácia"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Lorazepam - Secção 4.5"
+      }
+    },
+    
+    "side_effects": {
+      "title": "Efeitos Adversos",
+      "content": {
+        "common": [
+          "Sonolência, sedação",
+          "Tonturas, ataxia (mais comum em idosos)",
+          "Confusão (mais comum em idosos)",
+          "Fadiga, fraqueza muscular",
+          "Hipotensão",
+          "Depressão respiratória (especialmente IV/doses altas)",
+          "Amnésia anterógrada",
+          "Náuseas"
+        ],
+        "uncommon": [
+          "Agitação (mais comum crianças/idosos)",
+          "Comportamento anormal",
+          "Alucinações",
+          "Perturbações libido",
+          "Erupção cutânea",
+          "Constipação",
+          "Disfunção sexual"
+        ],
+        "serious": [
+          "Depressão respiratória grave",
+          "Apneia (especialmente IV)",
+          "Síndrome de abstinência",
+          "Comportamentos suicidas",
+          "Coma (em sobredosagem)",
+          "Hipotermia",
+          "Reações paradoxais graves"
+        ],
+        "parenteral_specific": [
+          "Vertigo",
+          "Dor no local injeção",
+          "Tromboflebite",
+          "Leucopenia (raro)"
+        ]
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Lorazepam - Secção 4.8"
+      }
+    },
+    
+    "special_populations": {
+      "title": "Populações Especiais",
+      "content": {
+        "pregnancy": {
+          "category": "D",
+          "description": "Evitar uso regular. Risco síndrome abstinência neonatal",
+          "risks": [
+            "Hipotonia neonatal",
+            "Hipotermia",
+            "Depressão respiratória",
+            "Síndrome abstinência neonatal"
+          ],
+          "labor": "Doses altas no final gravidez/parto podem causar 'síndrome bebé mole'"
+        },
+        "lactation": {
+          "safety": "Evitar se possível",
+          "description": "Presente no leite materno",
+          "effects": "Sedação e má alimentação no lactente"
+        },
+        "pediatric": {
+          "restrictions": "Várias restrições por via/indicação",
+          "unlicensed_uses": [
+            "Convulsões febris",
+            "Convulsões por intoxicação",
+            "Pré-medicação IV <12 anos",
+            "Pré-medicação oral <5 anos"
+          ],
+          "paradoxical_reactions": "Mais comuns em crianças"
+        },
+        "elderly": {
+          "considerations": [
+            "Iniciar sempre com doses menores",
+            "Maior risco ataxia, confusão",
+            "Maior risco quedas",
+            "Clearance reduzida",
+            "Evitar uso prolongado",
+            "Preferir benzodiazepinas meia-vida curta"
+          ],
+          "typical_doses": "0,5-1 mg/dia inicialmente"
+        }
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Lorazepam - Secção 4.6"
+      }
+    },
+    
+    "hepatic_impairment": {
+      "title": "Insuficiência Hepática",
+      "content": {
+        "advantage": "Lorazepam preferível - metabolismo por conjugação simples",
+        "mild_moderate": "Usar com precaução, considerar redução dose",
+        "severe": "Evitar - risco encefalopatia",
+        "adjustment": "Redução dose conforme gravidade",
+        "monitoring": "Vigilância apertada sinais toxicidade"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Lorazepam - Secção 4.2"
+      }
+    },
+    
+    "renal_impairment": {
+      "title": "Insuficiência Renal",
+      "content": {
+        "mild_moderate": "Usar com precaução",
+        "severe": "Considerar redução dose",
+        "dialysis": "Não significativamente removido por diálise",
+        "monitoring": "Vigilância sinais acumulação",
+        "notes": "Metabolitos inativos - menos problemático que outras benzodiazepinas"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Lorazepam - Secção 4.2"
+      }
+    },
+    
+    "administration": {
+      "title": "Administração",
+      "content": {
+        "oral": {
+          "timing": "Preferencialmente com alimentos (reduz irritação GI)",
+          "division": "Doses múltiplas: maior à noite",
+          "tablets": "Podem ser partidos se necessário"
+        },
+        "iv": {
+          "preparation": "Diluir com volume igual soro fisiológico ou água estéril",
+          "injection_rate": "Máximo 2 mg/min ou 50 mcg/kg/3min (crianças)",
+          "vein": "Administrar em veia calibrosa",
+          "monitoring": "Observação rigorosa até recuperação completa sedação"
+        },
+        "im": {
+          "indication": "Apenas quando via oral/IV não possível",
+          "dilution": "Diluir com volume igual soro fisiológico",
+          "absorption": "Absorção mais lenta e errática"
+        },
+        "emergency_equipment": "Obrigatório para administração parentérica: ventilação mecânica, flumazenil"
+      },
+      "source": {
+        "type": "RCM",
+        "reference": "RCM Lorazepam - Secção 6.6"
+      }
+    },
+    
+    "withdrawal": {
+      "title": "Síndrome de Abstinência e Descontinuação",
+      "content": {
+        "risk_factors": [
+          "Uso >2-4 semanas",
+          "Doses altas",
+          "Descontinuação abrupta",
+          "Meia-vida curta"
+        ],
+        "symptoms": {
+          "mild": [
+            "Ansiedade rebound",
+            "Insónia",
+            "Irritabilidade",
+            "Tremor"
+          ],
+          "moderate": [
+            "Sudorese profusa",
+            "Náuseas, vómitos",
+            "Hipersensibilidade luz/som",
+            "Despersonalização"
+          ],
+          "severe": [
+            "Convulsões",
+            "Delirium",
+            "Hipertermia",
+            "Colapso cardiovascular"
+          ]
+        },
+        "tapering_schedule": {
+          "general_rule": "Redução 25% da dose a cada 1-2 semanas",
+          "slow_taper": "Redução 10-12,5% para utentes dependentes",
+          "switch_strategy": "Considerar mudança para diazepam (meia-vida longa)",
+          "duration": "Pode demorar semanas a meses"
+        }
+      },
+      "source": {
+        "type": "Guidelines",
+        "reference": "Ashton Manual - Benzodiazepine Withdrawal"
+      }
+    },
+    
+    "forms": {
+      "title": "Formas Farmacêuticas",
+      "content": [
+        {
+          "form": "Comprimidos",
+          "strengths": ["1 mg", "2,5 mg"],
+          "pack_sizes": ["20 comp", "60 comp"],
+          "notes": "Comprimidos sulcados (podem ser partidos)"
+        },
+        {
+          "form": "Solução oral",
+          "strengths": ["2 mg/mL"],
+          "pack_sizes": ["30 mL"],
+          "notes": "Usar seringa graduada fornecida"
+        },
+        {
+          "form": "Solução injetável",
+          "strengths": ["4 mg/mL"],
+          "pack_sizes": ["1 mL ampola"],
+          "notes": "Uso hospitalar, equipamento ressuscitação obrigatório"
+        }
+      ],
+      "source": {
+        "type": "Infomed",
+        "reference": "Base de dados do Infarmed"
+      }
+    }
+  },
+  
+  "calculators": [
+    {
+      "id": "benzodiazepine_equivalence",
+      "name": "Equivalências de Benzodiazepinas",
+      "type": "conversion",
+      "applicable": true,
+      "description": "Conversão entre diferentes benzodiazepinas",
+      "reference_drug": "lorazepam",
+      "equivalences": {
+        "lorazepam": { "factor": 1, "half_life": "10-20h", "notes": "Referência" },
+        "diazepam": { "factor": 10, "half_life": "20-100h", "notes": "Meia-vida longa" },
+        "alprazolam": { "factor": 0.5, "half_life": "6-12h", "notes": "Potente, meia-vida curta" },
+        "clonazepam": { "factor": 0.5, "half_life": "18-50h", "notes": "Anticonvulsivante" },
+        "midazolam": { "factor": 7.5, "half_life": "1-4h", "notes": "Muito curta duração" },
+        "oxazepam": { "factor": 15, "half_life": "4-15h", "notes": "Metabolismo simples" },
+        "temazepam": { "factor": 10, "half_life": "8-22h", "notes": "Hipnótico" },
+        "zolpidem": { "factor": 10, "half_life": "2-3h", "notes": "Z-drug" }
+      }
+    },
+    {
+      "id": "pediatric_seizure_dose",
+      "name": "Dose Pediátrica Anticonvulsivante",
+      "type": "weight_based",
+      "applicable": true,
+      "description": "Calcular dose IV para estado de mal epilético",
+      "formula": "100 mcg/kg IV (máximo 4 mg)",
+      "administration": "IV lenta (máx 50 mcg/kg em 3 min)",
+      "repeat": "Pode repetir após 5-10 minutos se necessário"
+    },
+    {
+      "id": "conscious_sedation",
+      "name": "Calculadora Sedação Consciente",
+      "type": "weight_based",
+      "applicable": true,
+      "description": "Dose para sedação em procedimentos",
+      "formula": "50 mcg/kg IV (máximo 4 mg total)",
+      "timing": "30-45 min antes procedimento (IV) ou 60-90 min (IM)",
+      "monitoring": "Oximetria obrigatória"
+    }
+  ],
+  
+  "alerts": [
+    {
+      "type": "respiratory",
+      "condition": "uso_opioides",
+      "message": "ALERTA CRÍTICO: Risco depressão respiratória fatal - evitar co-prescrição"
+    },
+    {
+      "type": "dependence",
+      "condition": "uso_maior_4_semanas",
+      "message": "Risco dependência - planear redução gradual obrigatória"
+    },
+    {
+      "type": "elderly",
+      "condition": "idade_maior_65",
+      "message": "STOPP: Evitar >4 semanas, risco quedas, iniciar doses baixas"
+    },
+    {
+      "type": "parenteral",
+      "condition": "via_iv_im",
+      "message": "Equipamento ressuscitação obrigatório - pessoal experiente apenas"
+    },
+    {
+      "type": "withdrawal",
+      "condition": "descontinuacao",
+      "message": "NUNCA suspender abruptamente após >2 semanas - risco convulsões"
+    },
+    {
+      "type": "pregnancy",
+      "condition": "gravidez",
+      "message": "Evitar - risco síndrome abstinência neonatal e 'bebé mole'"
+    }
+  ],
+  
+  "clinical_pearls": [
+    "Benzodiazepina de eleição em insuficiência hepática (conjugação simples)",
+    "Meia-vida intermédia (10-20h) - bom compromisso eficácia/segurança",
+    "Excelente biodisponibilidade IV, oral e IM",
+    "Primeira linha em estado de mal epilético (com fenitoína)",
+    "Flumazenil disponível como antídoto (uso hospitalar)",
+    "Não induz enzimas hepáticas (ao contrário diazepam)",
+    "Redução gradual obrigatória >2 semanas uso",
+    "Preferir oxazepam em idosos (meia-vida mais curta)",
+    "IV deve ser sempre em veia calibrosa (risco flebite)",
+    "Observação ≥24h após sedação IV para procedimentos"
+  ],
+  
+  "references": [
+    {
+      "type": "primary",
+      "source": "RCM Lorazepam",
+      "url": "https://extranet.infarmed.pt/",
+      "date_accessed": "2025-01-01"
+    },
+    {
+      "type": "safety_alert",
+      "source": "Infarmed - Alerta Benzodiazepinas e Opioides",
+      "year": 2020
+    },
+    {
+      "type": "guideline",
+      "source": "Ashton Manual - Benzodiazepine Withdrawal",
+      "year": 2002
+    },
+    {
+      "type": "guideline",
+      "source": "Guidelines DGS - Estado de Mal Epilético",
+      "year": 2019
+    }
+  ]
+}
