@@ -107,6 +107,7 @@ export interface Medication {
 }
 
 export interface Patient {
+  sns?: string;
   name: string;
   age: number;
   weight: number;
@@ -115,6 +116,24 @@ export interface Patient {
   creatinine: number;
   creatinine_clearance: number;
   current_medications: string[];
+}
+
+export interface PatientProfile {
+  sns: string;
+  name: string;
+  age: number;
+  weight: number;
+  gender: 'M' | 'F';
+  conditions: string[];
+  creatinine: number;
+  creatinine_clearance: number;
+  current_medications: string[];
+  active_prescriptions?: Array<{
+    id: string;
+    name: string;
+    dose: string;
+    frequency: string;
+  }>;
 }
 
 export interface Prescription {

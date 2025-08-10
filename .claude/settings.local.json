@@ -5,7 +5,14 @@
       "Bash(git add:*)",
       "Bash(npm run react-dev:*)",
       "Bash(find:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(git commit:*)",
+      "Bash(gh repo create:*)",
+      "mcp__github__get_me",
+      "mcp__github__create_repository",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)"
     ],
     "deny": []
   }
